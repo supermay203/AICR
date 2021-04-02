@@ -27,6 +27,7 @@
 .ta-layout .ta-sidemenu-area.templayout,
 .ta-layout .ta-sidemenu-area.templayout .ta-bottest { transition: 0ms; }
 .ta-layout .ta-sidemenu-area.templayout .ta-sm-header:before { display: none; }
+.ta-layout .ta-sidemenu-area.templayout .ta-sm-menu { display: none; }
 .ta-layout .ta-sidemenu-area.templayout .ta-sm-contain { width: 240px;  background: url('../image/layout_temp/sidebar-top.png') no-repeat left top; }
 .ta-layout .ta-sidemenu-area.templayout .ta-bottest { position: absolute; bottom: 0; left: 0; width: 240px; height: 76px; background: url('../image/layout_temp/sidebar-bottom.png') no-repeat left top; }
 
@@ -224,7 +225,8 @@
 .ta-mb-select.ta-focus .ta-tm-arrow:hover { background-color: #0a0a0b; }
 
 /* 탑메뉴바영역 - 독립메뉴영역 */
-.ta-topmenu-area .ta-idpdmenu-area { position: absolute; top: 0; right: 0; padding-right: 20px; height: 100%; }
+/*.ta-topmenu-area .ta-idpdmenu-area { position: absolute; top: 0; right: 0; padding-right: 20px; height: 100%; }*/
+.ta-topmenu-area .ta-idpdmenu-area { position: absolute; top: 25px; right: 0; padding-right: 20px; height: 100%; }
 .ta-topmenu-area .ta-idpdmenu-area { display: flex; align-items: center; }
 .ta-topmenu-area .ta-idpdmenu-area { display: -ms-flexbox;  -ms-flex-align: center; }
 .ta-topmenu-area .ta-idpdmenu-area .ta-idpd-item { display: flex; align-items: center; }

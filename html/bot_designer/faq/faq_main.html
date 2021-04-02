@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : FAQ
+* @ 파일명 : html/bot_designer/faq/faq_main.html
+* @ 수정이력
+* **********************************************************************************************************************
+*	날짜				작업자		내용
+* **********************************************************************************************************************
+* 	2020-10-14			EiLABsjs	최초작성
+*   2020-10-16			EiLAB		마크업변경(컨텐츠영역 변경, 그룹이동 레이어팝업추가, 페이지네이션 표시영역추가)
+*   2020-10-21			EiLAB		마크업변경(intent 영역 추가)
+* 	2020-10-23			EiLAB		마크업변경(이미지변환 img TAG -> 폰트어썸HTML, svg, 검색영역 버튼변경)
+* **********************************************************************************************************************
+-->
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>FAQ</title>
+
+	<!-- Library -->
+	<script type="text/javascript" src="../../../resource/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../../../resource/js/jquery-ui-1.11.4.min.js"></script>
+
+	<!-- UI -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../../resource/css/ui_style.css" />
+	<script type="text/javascript" src="../../../resource/js/ui_plugin.js"></script>
+	<script type="text/javascript" src="../../../resource/js/ui_script.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- S : layout -->
+<div class="ta-layout">
+
+	<!-- S : 탑메뉴바영역 -->
+	<div class="ta-topmenu-area">
+		<div class="ta-tm-inner">
+			<div class="ta-homemenu-area"><img src="../../../resource/image/layout_temp/topbar-left.png" alt="" /></div>
+			<div class="ta-mainmenu-area"><img src="../../../resource/image/layout_temp/topbar-center.png" alt="" /></div>
+			<div class="ta-idpdmenu-area"><img src="../../../resource/image/layout_temp/topbar-right.png" alt="" /></div>
+		</div>
+	</div>
+	<!-- E : 탑메뉴바영역 -->
+
+	<!-- S : 컨테이너영역 -->
+	<div class="ta-container-area">
+
+		<!-- S : 테스트봇영역 -->
+		<div class="ta-testbot-area"><!-- 봇영역열기 className = ta-bt-open -->
+			<div class="ta-testbot">
+				테스트봇영역
+			</div>
+		</div>
+		<!-- E : 테스트봇영역 -->
+
+		
+
+		<!-- S : 컨텐츠영역 -->
+		<div class="ta-contents-area">
+			
+			<!-- S : 사이드메뉴바영역 -->
+			<div class="ta-sidemenu-area templayout"><!-- 사이드메뉴접기 className = ta-sm-fold -->
+				<div class="ta-sm-contain">
+					<div class="ta-bottest"></div>
+				</div>
+			</div>
+			<!-- E : 사이드메뉴바영역 -->
+
+			<div class="ta-contents">
+
+				<div class="ta-page-head">
+					<div class="ta-title-area">
+						<div class="ta-path">
+							<ul>
+								<li>
+									<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+									<a href="#" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+												<i class="fas fa-comments"></i>
+											</span>
+										</span>
+										<span class="ta-mlv2-txt">질문 - 답변 대화</span>
+									</a>
+									<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+									<div class="ta-btn-wrap">
+										<span class="ta-btn ta-btn-lv3ctrl"></span>
+										<div class="ta-layer-dropdown ta-ld-mlv3"><!-- 활성화 className = ta-active -->
+											<div class="ta-ld-box">
+												<div class="ta-conts-path-mlv3">
+													<div class="ta-path-mlv3-list">
+														<ul class="ta-optlist">
+															<li>
+																<a href="#" class="ta-mlv3-item"><span class="ta-mlv3-txt">FAQ대화</span></a>
+															</li>
+															<li class="ta-selected">
+																<a href="#" class="ta-mlv3-item"><span class="ta-mlv3-txt">기본&middot;공통 대화</span></a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="ta-active">
+									<a href="#" class="ta-mlv3-item"><span class="ta-mlv3-txt">FAQ대화</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ta-etc-area">
+						<div class="ta-etc-list">
+							<ul>
+								<li>
+									<button type="button" class="ta-btn ta-btn-s ta-btn-lineblue ta-etc-apply">운영 챗봇으로 적용</button>
+									<span class="ta-etc-txt" style="display: none;">보기만 가능</span><!-- S : (운영환경) 해당영역 필요 시 display none, block으로 제어 -->
+								</li>
+								<li>
+									<div class="ta-dd-botversion">
+										<button type="button" class="ta-btn ta-btn-botversion"><span class="ta-bv-dev">Development</span></button>
+										<button type="button" class="ta-btn ta-btn-botversion" style="display: none;"><span class="ta-prd">Production</span></button><!-- S : (운영환경) 해당영역 필요 시 display none, block으로 제어 -->
+										<div class="ta-layer-dropdown ta-ld-botversion"><!-- 활성화 className = ta-active -->
+											<div class="ta-ld-box">
+												<div class="ta-cont-botversion">
+													<div class="ta-bv-title">
+														<span class="ta-ltt-txt">봇 버전 및 환경</span>
+													</div>
+													<div class="ta-bv-conts-area">
+														<div class="ta-bv-list">
+															<ul>
+																<li>
+																	<div class="ta-bvl-title">
+																		<span>개발모드</span><span class="ta-state-blt ta-blt-blue"></span>
+																	</div>
+																	<div class="ta-bv-detail-list">
+																		<ol class="ta-optlist">
+																			<li class="ta-selected"><!-- 활성화 className = ta-selected -->
+																				<span class="ta-bvdl-txt">Development 0.8.1</span>
+																				<span class="ta-bvdl-update">Updated : 2020-08-18 20:04</span>
+																			</li>
+																			<li>
+																				<span class="ta-bvdl-txt">Development 0.8.1</span>
+																				<span class="ta-bvdl-update">Updated : 2020-08-18 20:04</span>
+																			</li>
+																		</ol>
+																	</div>
+																</li>
+																<li>
+																	<div class="ta-bvl-title">
+																		<span>운영모드</span><span class="ta-state-blt ta-blt-orange"></span>
+																	</div>
+																	<div class="ta-bv-detail-list">
+																		<ol class="ta-optlist">
+																			<li>
+																				<span class="ta-bvdl-txt">Production 1.1.3</span>
+																				<span class="ta-bvdl-update">Updated : 2020-08-18 20:04</span>
+																			</li>
+																			<li>
+																				<span class="ta-bvdl-txt">Production 1.1.3</span>
+																				<span class="ta-bvdl-update">Updated : 2020-08-18 20:04</span>
+																			</li>
+																		</ol>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="ta-page-cont"><!-- S : 수정이력 : *   2020-10-16			EiLAB		마크업변경(컨텐츠영역 변경) -->
+					<!-- S : 여기서부터 컨텐츠 -->
+
+
+
+					 <div class="ta-conts-faq ta-intent-spot"><!-- intent panel 레이아웃 className = ta-intent-spot -->
+						<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+						<div class="ta-page-tab">
+							<div class="ta-tabmenu-set">
+								<div class="ta-tabmenu">
+									<ul>
+										<li class="ta-on">
+											<div class="ta-btn-wrap">
+												<span class="ta-tm-title"><a href="#">Group name 1</a></span>
+												<button type="button" class="ta-btn ta-tm-option"></button>
+												<!-- S : 레이이드롭다운 - tabmenu option -->
+												<div class="ta-layer-dropdown ta-ld-tmopt"><!-- 활성화 className = ta-active -->
+													<div class="ta-ld-box">
+														<div class="ta-tmlist">
+															<ul class="ta-optlist">
+																<li>
+																	<button type="button" class="ta-btn ta-tm-list">
+																		<span class="ta-icon"><img src="../../../resource/image/component/etc/icon-tabmenu-modify.svg" alt=""></span>
+																		<span class="ta-ol-txt">Rename</span>
+																	</button>
+																</li>
+																<li>
+																	<button type="button" class="ta-btn ta-tm-list">
+																		<span class="ta-icon">
+																			<i class="far fa-trash-alt"></i>
+																		</span>
+																		<span class="ta-ol-txt">Delete</span>
+																	</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<!-- S : 레이이드롭다운 - tabmenu option -->
+											</div>
+										</li>
+										<li>
+											<div class="ta-btn-wrap">
+												<span class="ta-tm-title"><a href="#">Group name 2</a></span>
+												<button type="button" class="ta-btn ta-tm-option"></button>
+												<!-- S : 레이이드롭다운 - tabmenu option -->
+												<div class="ta-layer-dropdown ta-ld-tmopt"><!-- 활성화 className = ta-active -->
+													<div class="ta-ld-box">
+														<div class="ta-tmlist">
+															<ul class="ta-optlist">
+																<li>
+																	<button type="button" class="ta-btn ta-tm-list">
+																		<span class="ta-icon"><img src="../../../resource/image/component/etc/icon-tabmenu-modify.svg" alt=""></span>
+																		<span class="ta-ol-txt">Rename</span>
+																	</button>
+																</li>
+																<li>
+																	<button type="button" class="ta-btn ta-tm-list">
+																		<span class="ta-icon">
+																			<i class="far fa-trash-alt"></i>
+																		</span>
+																		<span class="ta-ol-txt">Delete</span>
+																	</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<!-- S : 레이이드롭다운 - tabmenu option -->
+											</div>
+										</li>
+										<li>
+											<div class="ta-btn-wrap">
+												<span class="ta-tm-title"><a href="#">Group name O...</a></span>
+												<button type="button" class="ta-btn ta-tm-option"></button>
+												<!-- S : 레이이드롭다운 - tabmenu option -->
+												<div class="ta-layer-dropdown ta-ld-tmopt"><!-- 활성화 className = ta-active -->
+													<div class="ta-ld-box">
+														<div class="ta-tmlist">
+															<ul class="ta-optlist">
+																<li>
+																	<button type="button" class="ta-btn ta-tm-list">
+																		<span class="ta-icon"><img src="../../../resource/image/component/etc/icon-tabmenu-modify.svg" alt=""></span>
+																		<span class="ta-ol-txt">Rename</span>
+																	</button>
+																</li>
+																<li>
+																	<button type="button" class="ta-btn ta-tm-list">
+																		<span class="ta-icon">
+																			<i class="far fa-trash-alt"></i>
+																		</span>
+																		<span class="ta-ol-txt">Delete</span>
+																	</button>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<!-- S : 레이이드롭다운 - tabmenu option -->
+											</div>
+										</li>
+									</ul>
+									<div class="ta-tm-tool">
+										<button type="button" class="ta-btn ta-btn-addgroup"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+	
+						<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+						<div class="ta-page-subhead">
+							<!-- S : 여기서부터 검색영역 -->
+							<div class="ta-search-section">
+								<div class="ta-inquiry-area">
+									<div class="ta-input ta-type-search">
+										<button type="button" class="ta-btn ta-btn-search"></button>
+										<input type="text" placeholder="검색" title="" value="">
+										<button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+									</div>
+								</div>
+								<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(검색영역 버튼변경) -->
+								<div class="ta-btn-area">
+									<button type="button" class="ta-btn ta-btn-moveexcel"><span class="ta-icon"><img src="../../../resource/image/component/etc/icon-moveexcel.svg" alt="" /></span></button>
+									<button type="button" class="ta-btn ta-btn-m ta-btn-bgblue ta-add-intent">FAQ 추가</button>
+								</div>
+								<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(검색영역 버튼변경) -->
+							</div>
+							<!-- E : 여기까지 검색영역 -->
+	
+							<!-- S : 여기서부터 아이템영역 -->
+							<div class="ta-item-section" style="display: none;"><!-- S : 해당영역 필요 시 display none, block으로 제어 -->
+								<div class="ta-is-item"><b><span>4</span>개</b> 아이템을 선택했습니다.</div>
+								<div class="ta-is-btn">
+									<button type="button" class="ta-btn ta-btn-item-trash">
+										<span class="ta-icon">
+											<i class="fas fa-trash"></i>
+										</span>
+									</button>
+									
+									<!-- S : 수정이력 : * 	2020-10-16			EiLAB		마크업변경(그룹이동 레이어팝업추가) -->
+									<div class="ta-btn-wrap">
+										<button type="button" class="ta-btn ta-btn-item-movegroup">
+											<span class="ta-icon">
+												<i class="fas fa-file-import"></i>
+											</span>
+										</button>
+										<!-- S : 레이어팝업 -->
+										<div class="ta-layer-popup" style="top: 31px; left: 32px; width: 140px; height: 162px;"><!-- 활성화 className = ta-active -->
+											<div class="ta-lp-contents">
+												<!-- S : 여기서부터 컨텐츠 -->
+	
+												<div class="ta-cont-movegroup">
+													<div class="ta-cmg-list">
+														<ul class="ta-optlist">
+															<li class="ta-selected">GROUP 2</li>
+															<li class="">GROUP 3</li>
+															<li class="">GROUP 4</li>
+														</ul>
+													</div>
+													<div class="ta-cmg-btn">
+														<button type="button" class="ta-btn ta-cmg-movegroup">여기로 이동</button>
+													</div>
+												</div>
+												
+												<!-- E : 여기서부터 컨텐츠 -->
+											</div>
+										</div>
+										<!-- E : 레이어팝업 -->
+									</div>
+									<!-- E : 수정이력 : * 	2020-10-16			EiLAB		마크업변경(그룹이동 레이어팝업추가) -->
+									
+								</div>
+	
+							</div>
+							<!-- S : 여기까지 아이템영역 -->
+						</div>
+						<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+	
+						<div class="ta-page-section">
+	
+							<div class="ta-tabcont">
+								<div class="ta-tc-item ta-on">
+	
+									<!-- S : 수정이력 : * 	2020-10-21			EiLAB		마크업변경(intent 영역 추가) -->
+									<div class="ta-varibox">
+										<div class="ta-vb-cell">
+											<div class="ta-box-white">
+												<div class="ta-cont-grid">
+													<!-- S : 여기서부터 그리드영역 -->
+			
+			
+													<!-- 가이드테이블 -->
+													<div class="ta-table ta-tbl-list ta-opt-scry ta-opt-hover">
+														<div class="ta-tbl-head">
+															<div class="ta-tbl-inner">
+																<table>
+																	<caption>테이블</caption>
+																	<colgroup>
+																		<col style="width:4%;">
+																		<col style="width:14%;">
+																		<col style="width:14%;">
+																		<col style="width:12%;">
+																		<col style="width:12%;">
+																		<col style="width:12%;">
+																		<col style="width:14%;">
+																		<col style="width:9%;">
+																		<col style="width:12%;">
+																	</colgroup>
+																	<thead>
+																		<tr>
+																			<th scope="col" class="ta-txt-c">
+																				<div class="ta-checkbox ta-allclear">
+																					<input type="checkbox" id="chk0_0" checked>
+																					<label for="chk0_0"></label>
+																				</div>
+																			</th>
+																			<th scope="col">
+																				<span class="ta-sort-title">제목</span>
+																				<button type="button" class="ta-btn ta-btn-sort"></button>
+																			</th>
+																			<th scope="col">
+																				<span class="ta-sort-title">진행상태</span>
+																				<button type="button" class="ta-btn ta-btn-sort"></button>
+																			</th>
+																			<th scope="col">
+																				<span class="ta-sort-title">오류</span>
+																				<button type="button" class="ta-btn ta-btn-sort"></button>
+																			</th>
+																			<th scope="col">
+																				<span class="ta-sort-title">ID</span>
+																				<button type="button" class="ta-btn ta-btn-sort"></button>
+																			</th>
+																			<th scope="col">
+																				<span class="ta-sort-title">편집자</span>
+																				<button type="button" class="ta-btn ta-btn-sort"></button>
+																			</th>
+																			<th scope="col">
+																				<span class="ta-sort-title">수정일</span>
+																				<button type="button" class="ta-btn ta-btn-sort"></button>
+																			</th>
+																			<th scope="col">
+																				<span class="ta-sort-title">버전</span>
+																				<button type="button" class="ta-btn ta-btn-sort"></button>
+																			</th>
+																			<th scope="col"></th>
+																		</tr>
+																	</thead>
+																</table>
+															</div>
+														</div>
+														<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+														<div class="ta-tbl-body">
+															<div class="ta-tbl-inner">
+																<table>
+																	<caption>테이블</caption>
+																	<colgroup>
+																		<col style="width:4%;">
+																		<col style="width:14%;">
+																		<col style="width:14%;">
+																		<col style="width:12%;">
+																		<col style="width:12%;">
+																		<col style="width:12%;">
+																		<col style="width:14%;">
+																		<col style="width:9%;">
+																		<col style="width:12%;">
+																	</colgroup>
+																	<tbody>
+			
+																		<tr class="ta-selected"><!-- 테이블 라인 선택 className=ta-selected -->
+																			<td class="ta-txt-c">
+																				<div class="ta-checkbox">
+																					<input type="checkbox" id="chk0_1" checked>
+																					<label for="chk0_1"></label>
+																				</div>
+																			</td>
+																			<td>법무검토의뢰</td>
+																			<td><div class="ta-status ta-type-r">Released</div></td>
+																			<td>Clear</td>
+																			<td>답변 ID</td>
+																			<td>권태훈</td>
+																			<td>2020-06-28 23:29</td>
+																			<td>0.1</td>
+																			<td>
+																				<div class="ta-hidden-td">
+																					<button type="button" class="ta-btn ta-btn-trash">
+																						<span class="ta-icon">
+																							<i class="fas fa-trash"></i>
+																						</span>
+																					</button>
+																				</div>
+																				<div class="ta-movegroup-td">
+																					<button type="button" class="ta-btn ta-btn-movegroup">
+																						<span class="ta-icon">
+																							<i class="fas fa-file-import"></i>
+																						</span>
+																					</button>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="ta-txt-c">
+																				<div class="ta-checkbox">
+																					<input type="checkbox" id="chk0_2">
+																					<label for="chk0_2"></label>
+																				</div>
+																			</td>
+																			<td>법무검토의뢰</td>
+																			<td><div class="ta-status ta-type-s">Standby</div></td>
+																			<td>Clear</td>
+																			<td>답변 ID</td>
+																			<td>권태훈</td>
+																			<td>2020-06-28 23:29</td>
+																			<td>0.1</td>
+																			<td>
+																				<div class="ta-hidden-td">
+																					<button type="button" class="ta-btn ta-btn-trash">
+																						<span class="ta-icon">
+																							<i class="fas fa-trash"></i>
+																						</span>
+																					</button>
+																				</div>
+																				<div class="ta-movegroup-td">
+																					<button type="button" class="ta-btn ta-btn-movegroup">
+																						<span class="ta-icon">
+																							<i class="fas fa-file-import"></i>
+																						</span>
+																					</button>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="ta-txt-c">
+																				<div class="ta-checkbox">
+																					<input type="checkbox" id="chk0_3">
+																					<label for="chk0_3"></label>
+																				</div>
+																			</td>
+																			<td>법무검토의뢰</td>
+																			<td><div class="ta-status ta-type-a">Approved</div></td>
+																			<td><div class="ta-td-error">error</div></td>
+																			<td>답변 ID</td>
+																			<td>권태훈</td>
+																			<td>2020-06-28 23:29</td>
+																			<td>New</td>
+																			<td>
+																				<div class="ta-hidden-td">
+																					<button type="button" class="ta-btn ta-btn-trash">
+																						<span class="ta-icon">
+																							<i class="fas fa-trash"></i>
+																						</span>
+																					</button>
+																				</div>
+																				<div class="ta-movegroup-td">
+																					<button type="button" class="ta-btn ta-btn-movegroup">
+																						<span class="ta-icon">
+																							<i class="fas fa-file-import"></i>
+																						</span>
+																					</button>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="ta-txt-c">
+																				<div class="ta-checkbox">
+																					<input type="checkbox" id="chk0_4">
+																					<label for="chk0_4"></label>
+																				</div>
+																			</td>
+																			<td>법무검토의뢰</td>
+																			<td><div class="ta-status ta-type-r">Released</div></td>
+																			<td>Clear</td>
+																			<td>답변 ID</td>
+																			<td>권태훈</td>
+																			<td>2020-06-28 23:29</td>
+																			<td>0.1</td>
+																			<td>
+																				<div class="ta-hidden-td">
+																					<button type="button" class="ta-btn ta-btn-trash">
+																						<span class="ta-icon">
+																							<i class="fas fa-trash"></i>
+																						</span>
+																					</button>
+																				</div>
+																				<div class="ta-movegroup-td">
+																					<button type="button" class="ta-btn ta-btn-movegroup">
+																						<span class="ta-icon">
+																							<i class="fas fa-file-import"></i>
+																						</span>
+																					</button>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="ta-txt-c">
+																				<div class="ta-checkbox">
+																					<input type="checkbox" id="chk0_5">
+																					<label for="chk0_5"></label>
+																				</div>
+																			</td>
+																			<td>법무검토의뢰</td>
+																			<td><div class="ta-status ta-type-r">Released</div></td>
+																			<td>Clear</td>
+																			<td>답변 ID</td>
+																			<td>권태훈</td>
+																			<td>2020-06-28 23:29</td>
+																			<td>0.1</td>
+																			<td>
+																				<div class="ta-hidden-td">
+																					<button type="button" class="ta-btn ta-btn-trash">
+																						<span class="ta-icon">
+																							<i class="fas fa-trash"></i>
+																						</span>
+																					</button>
+																				</div>
+																				<div class="ta-movegroup-td">
+																					<button type="button" class="ta-btn ta-btn-movegroup">
+																						<span class="ta-icon">
+																							<i class="fas fa-file-import"></i>
+																						</span>
+																					</button>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="ta-txt-c">
+																				<div class="ta-checkbox">
+																					<input type="checkbox" id="chk0_6">
+																					<label for="chk0_6"></label>
+																				</div>
+																			</td>
+																			<td>법무검토의뢰</td>
+																			<td><div class="ta-status ta-type-a">Approved</div></td>
+																			<td>Clear</td>
+																			<td>답변 ID</td>
+																			<td>권태훈</td>
+																			<td>2020-06-28 23:29</td>
+																			<td>0.1</td>
+																			<td>
+																				<div class="ta-hidden-td">
+																					<button type="button" class="ta-btn ta-btn-trash">
+																						<span class="ta-icon">
+																							<i class="fas fa-trash"></i>
+																						</span>
+																					</button>
+																				</div>
+																				<div class="ta-movegroup-td">
+																					<button type="button" class="ta-btn ta-btn-movegroup">
+																						<span class="ta-icon">
+																							<i class="fas fa-file-import"></i>
+																						</span>
+																					</button>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="ta-txt-c">
+																				<div class="ta-checkbox">
+																					<input type="checkbox" id="chk0_7">
+																					<label for="chk0_7"></label>
+																				</div>
+																			</td>
+																			<td>법무검토의뢰</td>
+																			<td><div class="ta-status ta-type-s">Standby</div></td>
+																			<td>Clear</td>
+																			<td>답변 ID</td>
+																			<td>권태훈</td>
+																			<td>2020-06-28 23:29</td>
+																			<td>0.1</td>
+																			<td>
+																				<div class="ta-hidden-td">
+																					<button type="button" class="ta-btn ta-btn-trash">
+																						<span class="ta-icon">
+																							<i class="fas fa-trash"></i>
+																						</span>
+																					</button>
+																				</div>
+																				<div class="ta-movegroup-td">
+																					<button type="button" class="ta-btn ta-btn-movegroup">
+																						<span class="ta-icon">
+																							<i class="fas fa-file-import"></i>
+																						</span>
+																					</button>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="ta-txt-c">
+																				<div class="ta-checkbox">
+																					<input type="checkbox" id="chk0_8">
+																					<label for="chk0_8"></label>
+																				</div>
+																			</td>
+																			<td>법무검토의뢰</td>
+																			<td><div class="ta-status ta-type-r">Released</div></td>
+																			<td>Clear</td>
+																			<td>답변 ID</td>
+																			<td>권태훈</td>
+																			<td>2020-06-28 23:29</td>
+																			<td>0.1</td>
+																			<td>
+																				<div class="ta-hidden-td">
+																					<button type="button" class="ta-btn ta-btn-trash">
+																						<span class="ta-icon">
+																							<i class="fas fa-trash"></i>
+																						</span>
+																					</button>
+																				</div>
+																				<div class="ta-movegroup-td">
+																					<button type="button" class="ta-btn ta-btn-movegroup">
+																						<span class="ta-icon">
+																							<i class="fas fa-file-import"></i>
+																						</span>
+																					</button>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="ta-txt-c">
+																				<div class="ta-checkbox">
+																					<input type="checkbox" id="chk0_9">
+																					<label for="chk0_9"></label>
+																				</div>
+																			</td>
+																			<td>법무검토의뢰</td>
+																			<td><div class="ta-status ta-type-s">Standby</div></td>
+																			<td>Clear</td>
+																			<td>답변 ID</td>
+																			<td>권태훈</td>
+																			<td>2020-06-28 23:29</td>
+																			<td>0.1</td>
+																			<td>
+																				<div class="ta-hidden-td">
+																					<button type="button" class="ta-btn ta-btn-trash">
+																						<span class="ta-icon">
+																							<i class="fas fa-trash"></i>
+																						</span>
+																					</button>
+																				</div>
+																				<div class="ta-movegroup-td">
+																					<button type="button" class="ta-btn ta-btn-movegroup">
+																						<span class="ta-icon">
+																							<i class="fas fa-file-import"></i>
+																						</span>
+																					</button>
+																				</div>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td class="ta-txt-c">
+																				<div class="ta-checkbox">
+																					<input type="checkbox" id="chk0_10">
+																					<label for="chk0_10"></label>
+																				</div>
+																			</td>
+																			<td>법무검토의뢰</td>
+																			<td><div class="ta-status ta-type-r">Released</div></td>
+																			<td>Clear</td>
+																			<td>답변 ID</td>
+																			<td>권태훈</td>
+																			<td>2020-06-28 23:29</td>
+																			<td>0.1</td>
+																			<td>
+																				<div class="ta-hidden-td">
+																					<button type="button" class="ta-btn ta-btn-trash">
+																						<span class="ta-icon">
+																							<i class="fas fa-trash"></i>
+																						</span>
+																					</button>
+																				</div>
+																				<div class="ta-movegroup-td">
+																					<button type="button" class="ta-btn ta-btn-movegroup">
+																						<span class="ta-icon">
+																							<i class="fas fa-file-import"></i>
+																						</span>
+																					</button>
+																				</div>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+													</div>
+			
+			
+			
+													<!-- E : 여기까지 그리드영역 -->
+												</div>
+												<div class="ta-cont-pagination">
+													<div class="ta-item-wrap">
+														<div class="ta-iw-txt">항목 표시 수</div>
+														<div class="ta-iw-select">
+															<div class="ta-select ta-paging-select">
+																<select name="" id="" title="">
+																	<option value="">50</option>
+																	<option value="" selected>100</option>
+																	<option value="">150</option>
+																	<option value="">200</option>
+																	<option value="">250</option>
+																</select>
+															</div>
+														</div>
+														<div class="ta-iw-num"><span class="value">1,228</span> 개중 <span class="value">1-100</span></div>
+													</div>
+
+													<!-- S : 수정이력 : *   2020-10-16			EiLAB		마크업변경(페이지네이션 표시영역추가) -->
+													<div class="ta-loading-item-wrap" style="display: none;"><!-- S : (운영환경) 해당영역 필요 시 display none, block으로 제어 -->
+														<div class="ta-liw-txt">검색중...</div>
+													</div>
+
+													<div class="ta-result-item-wrap" style="display: none;"><!-- S : (운영환경) 해당영역 필요 시 display none, block으로 제어 -->
+														<div class="ta-riw-txt"><span class="value">25</span>개 항목을 찾았습니다.</div>
+													</div>
+													<!-- E : 수정이력 : *   2020-10-16			EiLAB		마크업변경(페이지네이션 표시영역추가) -->
+
+													<div class="ta-paging-wrap">
+														<div class="ta-pw-pagi">
+															<div class="ta-cp-select">
+																<div class="ta-select ta-paging-select">
+																	<select name="" id="" title="">
+																		<option value="" selected>12</option>
+																		<option value="">13</option>
+																		<option value="">14</option>
+																		<option value="">15</option>
+																		<option value="">16</option>
+																	</select>
+																</div>
+															</div>
+															<div class="ta-pwp-num"><span>40</span> 페이지</div>
+														</div>
+														<div class="ta-pw-btn">
+															<button type="button" class="ta-btn ta-paging-prev" title=""></button>
+															<button type="button" class="ta-btn ta-paging-next" title=""></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="ta-vb-cell ta-cell-intent"><!-- intent 활성화 className = ta-vb-open -->
+											<div class="ta-cont-intent">
+												<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+												<div class="ta-cont-intent-inner">
+													<div class="ta-ci-header">
+														<button type="button" class="ta-btn ta-btn-intent-close" title=""><span class="ta-icon"><img src="../../../resource/image/component/etc/btn-pop-close.svg" alt=""></span></button>
+														<div class="ta-cih-title">GROUP NAME 01</div>
+													</div>
+													<div class="ta-ci-content">
+											
+														<div class="ta-expandbox">
+															<div class="ta-eb-inner">
+				
+																<div class="ta-cic-section">
+																	<div class="ta-cic-cell" style="width: 39%;">
+																		<div class="ta-cic-title">
+																			<span class="ta-icon">
+																				<i class="far fa-comment"></i>
+																			</span>
+																			<span class="ta-cict-title">질문</span>
+																			<div class="ta-tootip">
+																				<button type="button" class="ta-btn ta-tooltip"><span class="ta-icon"><img src="../../../resource/image/component/etc/icon-tooltip.svg" alt=""></span></button>
+																				<div class="ta-tooltip-pop"><!-- 활성화 className = ta-active -->
+																					<div class="ta-ttp-cont">사용자의 질문을 입력하여 챗봇에 성능을 높여주세요.</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="ta-cic-cont">
+																			<div class="ta-cicc-q-input">
+																				<div class="ta-dropdown ta-input-dd ta-w-full"><!-- 드롭다운 활성화 className = ta-focus -->
+																					<div class="ta-dd-input">
+																						<div class="ta-input ta-w-full ta-type-enter"><!-- 인풋 focus 활성화 className = ta-focus / 에러 활성화 className = ta-error -->
+																							<input type="text" placeholder="사용자 입력 대표 문장 예시를 입력해주세요." title="" value="인증사업(PASS)" />
+																							<button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+																							<button type="button" class="ta-btn ta-btn-enter"></button><!-- 버튼 비활성화(disabled) 속성 추가  -->
+																						</div>
+																						<!-- <p class="ta-formmsg ta-error">* 동일한 질문이 있습니다. 다시 입력해주세요.</p> -->
+																					</div>
+																					<div class="ta-dd-option">
+																						<div class="ta-ddo-box">
+																							<div class="ta-ddo-optlist">
+																								<ul>
+																									<li class=""><b>인증사업(PASS)</b> 법무 지원 담당자가 누구인가요?</li><!-- 선택된옵션 className = ta-selected -->
+																									<li class=""><b>인증사업(PASS)</b> 법무지원 담당자 알려줘.</li>
+																									<li class=""><b>인증사업(PASS)</b> 법무지원 담당자를 모르겠어요.</li>
+																									<li class=""><b>인증사업(PASS)</b> 법무 지원하는 담당자가 누구에요?</li>
+																									<li class=""><b>인증사업(PASS)</b> 법무 지원하는 담당자 이름 알려주세요.</li>
+																								</ul>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="ta-cicc-q-list">
+																				<div class="ta-cq-button">
+																					<button type="button" class="ta-btn ta-all-delete">전체삭제</button>
+																				</div>
+																				<div class="ta-cq-search-wrap">
+																					<div class="ta-cqs-input">
+																						<div class="ta-input ta-w-full ta-type-search">
+																							<button type="button" class="ta-btn ta-btn-search">검색</button>
+																							<input type="text" placeholder="입력 문장 검색" title="" value="" />
+																							<button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+																						</div>
+																					</div>
+																					<div class="ta-cqs-list">
+																						<ul>
+																							<li>
+																								<div class="ta-fakeinput-wrap"><!-- S : 편집모드 활성화 className = ta-mode-edit -->
+																									<div class="ta-fi-info-box">
+																										<div class="ta-fii-txt">AI 서비스 법무 지원은 누가 담당하나요?</div>
+																										<button type="button" class="ta-btn ta-btn-trash">
+																											<span class="ta-icon">
+																												<i class="fas fa-trash"></i>
+																											</span>
+																										</button>
+																									</div>
+																									<div class="ta-fi-edit-box">
+																										<div class="ta-input ta-type-enter ta-w-full">
+																											<input type="text" placeholder="placeholder" title="" value="">
+																											<button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+																											<button type="button" class="ta-btn ta-btn-enter"></button>
+																										</div>
+																									</div>
+																								</div>
+																							</li>
+																							<li>
+																								<div class="ta-fakeinput-wrap"><!-- S : 편집모드 활성화 className = ta-mode-edit -->
+																									<div class="ta-fi-info-box">
+																										<div class="ta-fii-txt">AI 서비스 법무 지원은 누가 담당하나요?</div>
+																										<button type="button" class="ta-btn ta-btn-trash">
+																											<span class="ta-icon">
+																												<i class="fas fa-trash"></i>
+																											</span>
+																										</button>
+																									</div>
+																									<div class="ta-fi-edit-box">
+																										<div class="ta-input ta-type-enter ta-w-full">
+																											<input type="text" placeholder="placeholder" title="" value="">
+																											<button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+																											<button type="button" class="ta-btn ta-btn-enter"></button>
+																										</div>
+																									</div>
+																								</div>
+																							</li>
+																							<li>
+																								<div class="ta-fakeinput-wrap"><!-- S : 편집모드 활성화 className = ta-mode-edit -->
+																									<div class="ta-fi-info-box">
+																										<div class="ta-fii-txt">AI 서비스 관련 검토는 어떤부서에서 하나요?</div>
+																										<button type="button" class="ta-btn ta-btn-trash">
+																											<span class="ta-icon">
+																												<i class="fas fa-trash"></i>
+																											</span>
+																										</button>
+																									</div>
+																									<div class="ta-fi-edit-box">
+																										<div class="ta-input ta-type-enter ta-w-full">
+																											<input type="text" placeholder="placeholder" title="" value="">
+																											<button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+																											<button type="button" class="ta-btn ta-btn-enter"></button>
+																										</div>
+																									</div>
+																								</div>
+																							</li>
+																							<li>
+																								<div class="ta-fakeinput-wrap"><!-- S : 편집모드 활성화 className = ta-mode-edit -->
+																									<div class="ta-fi-info-box">
+																										<div class="ta-fii-txt">AI 서비스 법무 지원 담당 누구야?</div>
+																										<button type="button" class="ta-btn ta-btn-trash">
+																											<span class="ta-icon">
+																												<i class="fas fa-trash"></i>
+																											</span>
+																										</button>
+																									</div>
+																									<div class="ta-fi-edit-box">
+																										<div class="ta-input ta-type-enter ta-w-full">
+																											<input type="text" placeholder="placeholder" title="" value="">
+																											<button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+																											<button type="button" class="ta-btn ta-btn-enter"></button>
+																										</div>
+																									</div>
+																								</div>
+																							</li>
+																							<li>
+																								<div class="ta-fakeinput-wrap"><!-- S : 편집모드 활성화 className = ta-mode-edit -->
+																									<div class="ta-fi-info-box">
+																										<div class="ta-fii-txt">AI 서비스 법무 지원 담당이랑 얘기하고 싶어</div>
+																										<button type="button" class="ta-btn ta-btn-trash">
+																											<span class="ta-icon">
+																												<i class="fas fa-trash"></i>
+																											</span>
+																										</button>
+																									</div>
+																									<div class="ta-fi-edit-box">
+																										<div class="ta-input ta-type-enter ta-w-full">
+																											<input type="text" placeholder="placeholder" title="" value="">
+																											<button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+																											<button type="button" class="ta-btn ta-btn-enter"></button>
+																										</div>
+																									</div>
+																								</div>
+																							</li>
+																							<li>
+																								<div class="ta-fakeinput-wrap"><!-- S : 편집모드 활성화 className = ta-mode-edit -->
+																									<div class="ta-fi-info-box">
+																										<div class="ta-fii-txt">AI 서비스 법무 관련 담당은 어디서 봐?</div>
+																										<button type="button" class="ta-btn ta-btn-trash">
+																											<span class="ta-icon">
+																												<i class="fas fa-trash"></i>
+																											</span>
+																										</button>
+																									</div>
+																									<div class="ta-fi-edit-box">
+																										<div class="ta-input ta-type-enter ta-w-full">
+																											<input type="text" placeholder="placeholder" title="" value="">
+																											<button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+																											<button type="button" class="ta-btn ta-btn-enter"></button>
+																										</div>
+																									</div>
+																								</div>
+																							</li>
+																							<li>
+																								<div class="ta-fakeinput-wrap"><!-- S : 편집모드 활성화 className = ta-mode-edit -->
+																									<div class="ta-fi-info-box">
+																										<div class="ta-fii-txt">AI 서비스 법무 담당 어디서 확인하는거죠?</div>
+																										<button type="button" class="ta-btn ta-btn-trash">
+																											<span class="ta-icon">
+																												<i class="fas fa-trash"></i>
+																											</span>
+																										</button>
+																									</div>
+																									<div class="ta-fi-edit-box">
+																										<div class="ta-input ta-type-enter ta-w-full">
+																											<input type="text" placeholder="placeholder" title="" value="">
+																											<button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+																											<button type="button" class="ta-btn ta-btn-enter"></button>
+																										</div>
+																									</div>
+																								</div>
+																							</li>
+																						</ul>
+																					</div>
+																					<div class="ta-cqs-paging">
+																						<div class="ta-iw-num"><span class="value">1,228</span> 개중 <span class="value">1-100</span></div>
+																						<div class="ta-iw-paging">
+																							<div class="ta-paging-number"><span class="ta-pn-import">1</span>/<span>2</span> 페이지</div>
+																							<button type="button" class="ta-btn ta-paging-prev" disabled></button>
+																							<button type="button" class="ta-btn ta-paging-next"></button>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+												
+																	<div class="ta-cic-cell" style="width: 33%;">
+																		<div class="ta-cic-title">
+																			<span class="ta-icon">
+																				<i class="far fa-comment-dots"></i>
+																			</span>
+																			<span class="ta-cict-title">봇 답변</span>
+																			<div class="ta-tootip">
+																				<button type="button" class="ta-btn ta-tooltip"><span class="ta-icon"><img src="../../../resource/image/component/etc/icon-tooltip.svg" alt=""></span></button>
+																				<div class="ta-tooltip-pop"><!-- 활성화 className = ta-active -->
+																					<div class="ta-ttp-cont">챗봇이 사용자에게 답변 할 메시지를 꾸며보세요.</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="ta-cic-cont">
+																			<div class="ta-cicc-a-item">
+																				<div class="ta-ca-title">
+																					<div class="ta-cat-wrap">
+																						<span class="ta-cat-title">이미지</span>
+																						<button type="button" class="ta-btn ta-btn-switch ta-on"><!-- 활성화 className = ta-on -->
+																							<span class="ta-switch-ea"></span>
+																						</button>
+																					</div>
+																				</div>
+																				<div class="ta-ca-conts">
+																					<div class="ta-cac-url">
+																						<p>이미지를 직접 업로드하거나 URL을<br>입력하여 주세요.(jpg/png/gif)</p>
+																						<button type="button" class="ta-btn ta-btn-upload ta-btn-m ta-btn-lineblue">이미지 파일 업로드 (max 10mb)</button>
+																						<div class="ta-formset-url">
+																							<div class="ta-input">
+																								<input type="text" placeholder="이미지 URL" title="" value="">
+																								<button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+																							</div>
+																							<div class="ta-url-btn">
+																								<button type="button" class="ta-btn ta-btn-m ta-btn-bgblue">등록</button>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="ta-cicc-a-item"><!-- 에러 활성화 className = ta-error -->
+																				<div class="ta-ca-title ta-active"><!-- 제목 인풋 활성화 className = ta-active -->
+																					<div class="ta-cat-wrap">
+																						<span class="ta-cat-title">제목</span>
+																						<button type="button" class="ta-btn ta-btn-switch ta-on"><!-- 활성화 className = ta-on -->
+																							<span class="ta-switch-ea"></span>
+																						</button>
+																					</div>
+																					<div class="ta-cat-input">
+																						<div class="ta-input ta-type-txtnum ta-w-full">
+																							<input type="text" placeholder="내용을 입력해주세요" title="" value="">
+																							<button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+																							<span class="ta-cat-txtnum"><span class="value">20</span></span>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="ta-ca-conts">
+																					<div class="ta-cac-txtedit">
+																						<!-- S : 여기서부터 에디터 영역 -->
+
+																						<p style="padding: 51px 0; text-align: center; font-size: 12px; color: #97979a;">에디터 영역</p>
+
+																						<!-- S : 여기까지 에디터 영역 -->
+																					</div>
+																				</div>
+																				<div class="ta-cac-btnwrap">
+																					<!-- S : 여기서부터 버튼추가 영역 -->
+
+																					<p style="padding: 51px 0; text-align: center; font-size: 12px; color: #97979a;">버튼추가 영역</p>
+
+																					<!-- S : 여기까지 버튼추가 영역 -->
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+												
+																	<div class="ta-cic-cell" style="width: 28%;">
+																		<div class="ta-cic-title">
+																			<span class="ta-icon">
+																				<i class="far fa-sticky-note"></i>
+																			</span>
+																			<span class="ta-cict-title">미리보기</span>
+																			<div class="ta-tootip">
+																				<button type="button" class="ta-btn ta-tooltip"><span class="ta-icon"><img src="../../../resource/image/component/etc/icon-tooltip.svg" alt=""></span></button>
+																				<div class="ta-tooltip-pop"><!-- 활성화 className = ta-active -->
+																					<div class="ta-ttp-cont">사용자에게 보여 질 답변 내용을 미리보실 수 있습니다.</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="ta-cic-cont"> 
+																			<div class="ta-cp-output">
+																				<!-- S : 여기서부터 미리보기 영역 -->
+																				
+																				<p style="font-size: 12px; color: #97979a;">미리보기 영역</p>
+
+																				<!-- E : 여기까지 미리보기 영역 -->
+																			</div>
+																		</div>
+																	</div>
+																	
+																</div>
+															</div>
+														</div>
+											
+													</div>
+												</div>
+												<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+											</div>
+										</div>
+									</div>
+									<!-- E : 수정이력 : * 	2020-10-21			EiLAB		마크업변경(intent 영역 추가) -->
+	
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<!-- E : 여기까지 컨텐츠 -->
+				</div>
+				
+			</div>
+		</div>
+		<!-- E : 컨텐츠영역 -->
+
+	</div>
+	<!-- E : 컨테이너영역 -->
+
+
+
+</div>
+<!-- E : layout -->
+
+
+
+</body>
+</html>
+
+

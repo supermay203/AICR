@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : 사용자관리(유저 없음)
+* @ 파일명 : html/bot_designer/usermanagement/usermanage_empty_user.html
+* @ 수정이력
+* **********************************************************************************************************************
+*	날짜				작업자		내용
+* **********************************************************************************************************************
+* 	2020-10-16			EiLABsjs		최초작성
+* 	2020-10-23			EiLAB		마크업변경(이미지변환 img TAG -> 폰트어썸HTML, svg)
+* **********************************************************************************************************************
+-->
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>사용자관리(유저 없음)</title>
+
+	<!-- Library -->
+	<script type="text/javascript" src="../../../resource/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../../../resource/js/jquery-ui-1.11.4.min.js"></script>
+
+	<!-- UI -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../../resource/css/ui_style.css" />
+	<script type="text/javascript" src="../../../resource/js/ui_plugin.js"></script>
+	<script type="text/javascript" src="../../../resource/js/ui_script.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- S : layout -->
+<div class="ta-layout">
+
+	<!-- S : 탑메뉴바영역 -->
+	<div class="ta-topmenu-area">
+		<div class="ta-tm-inner">
+			<div class="ta-homemenu-area"><img src="../../../resource/image/layout_temp/topbar-left.png" alt="" /></div>
+			<div class="ta-mainmenu-area"><img src="../../../resource/image/layout_temp/topbar-center.png" alt="" /></div>
+			<div class="ta-idpdmenu-area"><img src="../../../resource/image/layout_temp/topbar-right.png" alt="" /></div>
+		</div>
+	</div>
+	<!-- E : 탑메뉴바영역 -->
+
+	<!-- S : 컨테이너영역 -->
+	<div class="ta-container-area">
+
+		<!-- S : 테스트봇영역 -->
+		<div class="ta-testbot-area"><!-- 봇영역열기 className = ta-bt-open -->
+			<div class="ta-testbot">
+				테스트봇영역
+			</div>
+		</div>
+		<!-- E : 테스트봇영역 -->
+
+
+		<!-- S : 컨텐츠영역 -->
+		<div class="ta-contents-area">
+			
+			<!-- S : 사이드메뉴바영역 -->
+			<div class="ta-sidemenu-area templayout"><!-- 사이드메뉴접기 className = ta-sm-fold -->
+				<div class="ta-sm-contain">
+					<div class="ta-bottest"></div>
+				</div>
+			</div>
+			<!-- E : 사이드메뉴바영역 -->
+
+			<div class="ta-contents">
+
+				<div class="ta-page-head">
+					<div class="ta-title-area">
+						<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+						<div class="ta-path">
+							<ul>
+								<li>
+									<a href="#" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+												<i class="fas fa-user"></i>
+											</span>
+										</span>
+										<span class="ta-mlv2-txt">사용자관리</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+					</div>
+					<div class="ta-etc-area">
+						<div class="ta-etc-list">
+							<ul>
+								<li>
+									<button type="button" class="ta-btn ta-btn-s ta-btn-lineblue ta-etc-apply">운영 챗봇으로 적용</button>
+									<span class="ta-etc-txt" style="display: none;">보기만 가능</span><!-- S : (운영환경) 해당영역 필요 시 display none, block으로 제어 -->
+								</li>
+								<li>
+									<div class="ta-dd-botversion">
+										<button type="button" class="ta-btn ta-btn-botversion"><span class="ta-bv-dev">Development</span></button>
+										<button type="button" class="ta-btn ta-btn-botversion" style="display: none;"><span class="ta-prd">Production</span></button><!-- S : (운영환경) 해당영역 필요 시 display none, block으로 제어 -->
+										<div class="ta-layer-dropdown ta-ld-botversion"><!-- 활성화 className = ta-active -->
+											<div class="ta-ld-box">
+												<div class="ta-cont-botversion">
+													<div class="ta-bv-title">
+														<span class="ta-ltt-txt">봇 버전 및 환경</span>
+													</div>
+													<div class="ta-bv-conts-area">
+														<div class="ta-bv-list">
+															<ul>
+																<li>
+																	<div class="ta-bvl-title">
+																		<span>개발모드</span><span class="ta-state-blt ta-blt-blue"></span>
+																	</div>
+																	<div class="ta-bv-detail-list">
+																		<ol class="ta-optlist">
+																			<li class="ta-selected"><!-- 활성화 className = ta-selected -->
+																				<span class="ta-bvdl-txt">Development 0.8.1</span>
+																				<span class="ta-bvdl-update">Updated : 2020-08-18 20:04</span>
+																			</li>
+																			<li>
+																				<span class="ta-bvdl-txt">Development 0.8.1</span>
+																				<span class="ta-bvdl-update">Updated : 2020-08-18 20:04</span>
+																			</li>
+																		</ol>
+																	</div>
+																</li>
+																<li>
+																	<div class="ta-bvl-title">
+																		<span>운영모드</span><span class="ta-state-blt ta-blt-orange"></span>
+																	</div>
+																	<div class="ta-bv-detail-list">
+																		<ol class="ta-optlist">
+																			<li>
+																				<span class="ta-bvdl-txt">Production 1.1.3</span>
+																				<span class="ta-bvdl-update">Updated : 2020-08-18 20:04</span>
+																			</li>
+																			<li>
+																				<span class="ta-bvdl-txt">Production 1.1.3</span>
+																				<span class="ta-bvdl-update">Updated : 2020-08-18 20:04</span>
+																			</li>
+																		</ol>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="ta-page-cont">
+					<!-- S : 여기서부터 컨텐츠 -->
+
+
+
+					<div class="ta-conts-usermanage">
+
+						<div class="ta-page-subhead">
+
+							<!-- S : 여기서부터 검색영역 -->
+							<div class="ta-search-section">
+								<div class="ta-inquiry-area">
+									<div class="ta-input ta-type-search">
+										<button type="button" class="ta-btn ta-btn-search"></button>
+										<input type="text" placeholder="검색" title="" value="">
+										<button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+									</div>
+								</div>
+								<div class="ta-btn-area">
+									<div class="ta-user-normal-btn">
+										<button type="button" class="ta-btn ta-btn-m ta-btn-bgblue">사용자 등록</button>
+									</div>
+									<div class="ta-user-edit-btn">
+										<button type="button" class="ta-btn ta-btn-m ta-btn-bgblue">권한 편집</button>
+									</div>
+								</div>
+							</div>
+							<!-- E : 여기까지 검색영역 -->
+
+						</div>
+
+						<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+						<div class="ta-empty-user">
+							<div class="ta-icon"><img src="../../../resource/image/component/icon/icon-empty-user.svg" alt=""></div>
+						</div>
+						<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+						
+					</div>
+
+
+
+					<!-- E : 여기까지 컨텐츠 -->
+				</div>
+
+			</div>
+		</div>
+		<!-- E : 컨텐츠영역 -->
+
+	</div>
+	<!-- E : 컨테이너영역 -->
+
+
+
+</div>
+<!-- E : layout -->
+
+
+
+</body>
+</html>
+
+

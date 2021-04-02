@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ko" style="overflow-y:hidden;">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="telephone=no" name="format-detection" />	
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="z_eilab/favicon.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="z_eilab/favicon.png" />
+	<title>Component Guide</title>
+	<link rel="stylesheet" type="text/css" href="z_eilab/map.css" />
+	<script src="z_eilab/jquery-1.12.4.min.js"></script>
+	<script src="z_eilab/jquery-ui-1.11.4.js"></script>
+	<script src="z_eilab/map.js"></script>
+</head>
+<body>
+
+<!-- S : layout -->
+<div id="layout" class="layout">
+	<!-- S : header -->
+	<div id="header" class="header">
+		<div class="info_wrap">
+			<div class="info_project">
+				<div class="logo"><img src="z_eilab/project_logo.png" alt="" /></div>
+				<div class="title">리걸넷-챗봇-관리자</div>
+				<div class="subtitle">PC Web</div>
+			</div>
+			<div class="version_wrap">퍼블리싱가이드 : <span>version 1.0 | 2020-10-30</span></div>
+		</div>
+
+		<div class="btn_wrap">
+			<div class="inner">
+				<button type="button" class="btn bg_main" onClick="location.href='map.html'">관리자</button>
+				<button type="button" class="btn btn_guide bg_guide" onClick="location.href='map_guide.html'">Component Guide</button>
+			</div>
+		</div>
+
+		<div id="remote" class="remote_wrap">
+			<div class="btn_remote_wrap">
+				<button type="button" class="btn refresh" title="목록 새로고침"></button>
+				<div class="btn_wrap_iactrl">
+					<button type="button" class="btn btn_ia_ctrl ia_close" title="목록 접기"></button>
+					<button type="button" class="btn btn_ia_ctrl ia_open" title="목록 펼치기"></button>
+				</div>
+				<button type="button" class="btn more_info active" title="파일 상세 정보 보기"></button>
+				<!-- <button type="button" class="btn check_modify" title="수정이력 정보 보기"></button> -->
+			</div>
+		</div>
+
+		<!-- <div class="navi_wrap">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper"></div>
+			    <div class="swiper-scrollbar"></div>
+			</div>
+		</div> -->
+		
+	</div>
+	<!-- E : header -->
+	
+	<!-- S : container -->
+	<div id="container" class="container">
+		
+		<!-- S : IA -->
+		<div class="ia">
+
+			<!-- S : 컴포넌트 -->
+			<div class="depth category guide">
+				<div class="title bg_guide">component <span class="dir">html/_guide/component</span></div>
+				<div class="conts">
+
+					<div class="depth split">
+						<div class="title">default</div>
+						<div class="conts">
+
+							<div class="page">
+								<div class="row"><a class="info title">text</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">component_text.html</span><span class="info id">화면ID</span></div>
+							</div>
+							<div class="page">
+								<div class="row"><a class="info title">form</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">component_form.html</span><span class="info id">화면ID</span></div>
+							</div>
+							<div class="page">
+								<div class="row"><a class="info title">table</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">component_table.html</span><span class="info id">화면ID</span></div>
+							</div>
+							<div class="page">
+								<div class="row"><a class="info title">button</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">component_button.html</span><span class="info id">화면ID</span></div>
+							</div>
+							<div class="page">
+								<div class="row"><a class="info title">icon</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">component_icon.html</span><span class="info id">화면ID</span></div>
+							</div>
+							<div class="page">
+								<div class="row"><a class="info title">paging</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">component_paging.html</span><span class="info id">화면ID</span></div>
+							</div>
+							<div class="page">
+								<div class="row"><a class="info title">function - [tap]</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">component_function.html</span><span class="info id">화면ID</span></div>
+							</div>
+							<div class="page">
+								<div class="row"><a class="info title">etc - [label]</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">component_etc.html</span><span class="info id">화면ID</span></div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- E : 컴포넌트 -->
+
+
+			<!-- S : 컴포넌트배치 -->
+			<div class="depth category guide">
+				<div class="title bg_guide">component display <span class="dir">html/_guide/component_display</span></div>
+				<div class="conts">
+
+					<!-- S : 컴포넌트조합 -->
+					<div class="depth split">
+						<div class="title">component set</div>
+						<div class="conts">
+
+							<div class="page">
+								<div class="row"><a class="info title">form</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">set_form.html</span><span class="info id">화면ID</span></div>
+							</div>
+							<div class="page">
+								<div class="row"><a class="info title">table</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">set_table.html</span><span class="info id">화면ID</span></div>
+							</div>
+
+						</div>
+					</div>
+					<!-- E : 컴포넌트조합 -->
+
+					<!-- S : 배치세트 -->
+					<div class="depth split">
+						<div class="title">display set</div>
+						<div class="conts">
+
+							<div class="page">
+								<div class="row"><a class="info title">text</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">display_text.html</span><span class="info id">화면ID</span></div>
+							</div>
+							<div class="page">
+								<div class="row"><a class="info title">form</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">display_form.html</span><span class="info id">화면ID</span></div>
+							</div>
+							<div class="page">
+								<div class="row"><a class="info title">button</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">display_button.html</span><span class="info id">화면ID</span></div>
+							</div>
+							<div class="page">
+								<div class="row"><a class="info title">list</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">display_list.html</span><span class="info id">화면ID</span></div>
+							</div>
+
+						</div>
+					</div>
+					<!-- E : 배치세트 -->
+			
+				</div>
+			</div>
+			<!-- E : 컴포넌트배치 -->
+
+
+
+			<!-- S : 컨텐츠샘플 -->
+			<div class="depth category guide">
+				<div class="title bg_guide">contents sample <span class="dir">html/_guide/contents_sample</span></div>
+				<div class="conts">
+
+					<div class="depth split">
+						<div class="title">notification message</div>
+						<div class="conts">
+
+							<div class="page">
+								<div class="row"><a class="info title">inline, toast</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">noti_msg.html</span><span class="info id">화면ID</span></div>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="depth split">
+						<div class="title">tooltip</div>
+						<div class="conts">
+
+							<div class="page">
+								<div class="row"><a class="info title">tooltip</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">tooltip.html</span><span class="info id">화면ID</span></div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="depth split">
+						<div class="title">noname</div>
+						<div class="conts">
+
+							<div class="page">
+								<div class="row"><a class="info title">noname</a><span class="info date">default</span></div>
+								<div class="row"><span class="info file">guide_noname.html</span><span class="info id">화면ID</span></div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- E : 컨텐츠샘플 -->
+
+		</div>
+		<!-- E : IA -->
+
+
+	</div>
+	<!-- E : container -->
+</div>
+<!-- E : layout -->
+
+</body>
+</html>
+

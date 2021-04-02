@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="ko" style="overflow-y: hidden;">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="telephone=no" name="format-detection" />	
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="z_eilab/favicon.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="z_eilab/favicon.png" />
+	<title>리걸넷-챗봇-관리자</title>
+	<link rel="stylesheet" type="text/css" href="z_eilab/map.css" />
+	<link rel="stylesheet" type="text/css" href="z_eilab/plugin.css" />
+	<script src="z_eilab/jquery-1.12.4.min.js"></script>
+	<script src="z_eilab/jquery-ui-1.11.4.js"></script>
+	<script src="z_eilab/map.js"></script>
+	<script src="z_eilab/plugin.js"></script>
+</head>
+<body>
+
+<!-- S : layout -->
+<div id="layout" class="layout">
+
+	<!-- S : header -->
+	<div id="header" class="header">
+
+		<div class="info_wrap">
+			<div class="info_project">
+				<div class="logo"><img src="z_eilab/project_logo.png" alt="" /></div>
+				<div class="title">리걸넷-챗봇-관리자</div>
+				<div class="subtitle">PC Web</div>
+				<div class="eilab"><img src="z_eilab/eilab.png" alt="" /></div>
+			</div>
+			<div class="version_wrap">퍼블리싱가이드 : <span>version 1.0 | 2020-10-30</span></div>
+		</div>
+
+		<div class="btn_wrap">
+			<div class="inner">
+				<button type="button" class="btn bg_main" data-pageNum="totalPage" onClick="location.href='map.html'">관리자</button>
+				<button type="button" class="btn btn_guide bg_guide" onClick="location.href='map_guide.html'">Component Guide</button>
+			</div>
+		</div>
+
+		<div class="navi_wrap"></div>
+
+		<div id="remote" class="remote_wrap">
+			<div class="btn_remote_wrap">
+				<button type="button" class="btn refresh" title="목록 새로고침"></button>
+				<!-- <div class="btn_wrap_iactrl">
+					<button type="button" class="btn btn_ia_ctrl ia_close" title="목록 접기"></button>
+					<button type="button" class="btn btn_ia_ctrl ia_open" title="목록 펼치기"></button>
+				</div> -->
+				<button type="button" class="btn more_info active" title="파일 상세 정보 보기"></button>
+				<button type="button" class="btn check_modify" title="수정이력 정보 보기"></button>
+			</div>
+			<div class="release_info">
+				<div class="cell">
+					<div class="recent"><span class="block">최근전달일</span></div>
+					<div class="finish"><span class="block">이전전달일</span></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- E : header -->
+	
+	<!-- S : container -->
+	<div id="container" class="container">
+		
+		<!-- S : IA -->
+		<div class="ia">
+
+
+			<div class="depth guide">
+				<div class="title bg_guide">Guide</div>
+				<div class="conts">
+
+					<div class="depth">
+						<div class="title bg_guide">layout<span class="dir">html/_guide/layout</span></div>
+						<div class="conts">
+		
+							<div class="depth split">
+								<div class="title">layout</div>
+								<div class="conts">
+				
+									<div class="page">
+										<div class="row"><a class="info title">레이아웃(공통)</a><span class="info date">default</span></div>
+										<div class="row"><span class="info file">layout_default.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page">
+										<div class="row"><a class="info title">레이아웃(임시/화면제작용)</a><span class="info date">default</span></div>
+										<div class="row"><span class="info file">layout_default_temp.html</span><span class="info id">화면ID</span></div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="depth split">
+								<div class="title">레이아웃 예제</div>
+								<div class="conts">
+									<div class="page">
+										<div class="row"><a class="info title">CSS모션 확인용 테스트레이아웃</a><span class="info date">default</span></div>
+										<div class="row"><span class="info file">layout_default_test.html</span><span class="info id">화면ID</span></div>
+									</div>
+								</div>
+							</div>
+		
+						</div>
+					</div>
+
+					<div class="depth">
+						<div class="title bg_guide">modal<span class="dir">html/_guide/modal</span></div>
+						<div class="conts">
+		
+							<!-- <div class="depth split">
+								<div class="title">alert template</div>
+								<div class="conts">
+									<div class="page alert">
+										<div class="row"><a class="info title">얼럿</a><span class="info date">default</span></div>
+										<div class="row"><span class="info file">modal_alert.html</span><span class="info id">화면ID</span></div>
+									</div>
+									
+								</div>
+							</div> -->
+
+							<div class="depth split">
+								<div class="title">popup template</div>
+								<div class="conts">
+									
+									<div class="page popup">
+										<div class="row"><a class="info title">기본템플릿</a><span class="info date">default</span></div>
+										<div class="row"><span class="info file">modal_popup.html</span><span class="info id">화면ID</span></div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="depth split">
+								<div class="title">popup 대표유형</div>
+								<div class="conts">
+									
+									<div class="page popup">
+										<div class="row"><a class="info title">확인</a><span class="info date">default</span></div>
+										<div class="row"><span class="info file">modal_popup_confirm.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page popup">
+										<div class="row"><a class="info title">warning</a><span class="info date">default</span></div>
+										<div class="row"><span class="info file">modal_popup_warning.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page popup">
+										<div class="row"><a class="info title">프롬프트</a><span class="info date">default</span></div>
+										<div class="row"><span class="info file">modal_popup_prompt.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page popup">
+										<div class="row"><a class="info title">import</a><span class="info date">default</span></div>
+										<div class="row"><span class="info file">modal_popup_import.html</span><span class="info id">화면ID</span></div>
+									</div>
+
+								</div>
+							</div>
+		
+						</div>
+					</div>
+
+					<div class="depth">
+						<div class="title bg_guide">layer template<span class="dir">html/_guide/layer</span></div>
+						<div class="conts">
+		
+							<div class="depth split">
+								<div class="title">레이어팝업</div>
+								<div class="conts">
+									
+									<div class="page layer">
+										<div class="row"><a class="info title">기본템플릿</a><span class="info date">default</span></div>
+										<div class="row"><span class="info file">layer_popup.html</span><span class="info id">화면ID</span></div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="depth split">
+								<div class="title">로딩중</div>
+								<div class="conts">
+
+									<div class="page layer">
+										<div class="row"><a class="info title">Circle Progress</a><span class="info date">2020-10-21</span></div>
+										<div class="row"><span class="info file">layer_circle_progress.html</span><span class="info id">화면ID</span></div>
+									</div>
+								</div>
+							</div>
+		
+						</div>
+					</div>
+
+					<div class="depth">
+						<div class="title bg_guide">etc<span class="dir">html/_guide/etc</span></div>
+						<div class="conts">
+		
+							<div class="depth split">
+								<div class="title">error</div>
+								<div class="conts">
+									
+									<div class="page">
+										<div class="row"><a class="info title">error</a><span class="info date">2020-10-30</span></div>
+										<div class="row"><span class="info file">error.html</span><span class="info id">화면ID</span></div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+					
+
+				</div>
+			</div>
+
+
+			<div class="depth">
+				<div class="title bg_main">Authorize <span class="dir">html/authorize/signin</span></div>
+				<div class="conts">
+					
+					<div class="depth">
+						<div class="title">Sign In </div>
+						<div class="conts">
+							
+							<div class="depth split">
+								<div class="title">Sign In</div>
+								<div class="conts">
+									
+									<div class="page">
+										<div class="row"><a class="info title">Sign In</a><span class="info date">2020-10-14</span></div>
+										<div class="row"><span class="info file">signin_main.html</span><span class="info id">화면ID</span></div>
+									</div>
+		
+								</div>
+							</div>
+
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+
+			<div class="depth">
+				<div class="title bg_main">BotDesigner</div>
+				<div class="conts">
+					
+					<div class="depth">
+						<div class="title">FAQ <span class="dir">html/bot_designer/faq</span></div>
+						<div class="conts">
+							
+							<div class="depth split">
+								<div class="title">FAQ</div>
+								<div class="conts">
+									
+									<div class="page">
+										<div class="row"><a class="info title">FAQ</a><span class="info date">2020-10-14</span></div>
+										<div class="row"><span class="info file">faq_main.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page">
+										<div class="row"><a class="info title">FAQ-intent</a><span class="info date">2020-10-21</span></div>
+										<div class="row"><span class="info file">faq_intent.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page">
+										<div class="row"><a class="info title">FAQ(검색결과 없음)</a><span class="info date">2020-10-16</span></div>
+										<div class="row"><span class="info file">faq_main_empty_result.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page">
+										<div class="row"><a class="info title">FAQ(group 없음)</a><span class="info date">2020-10-16</span></div>
+										<div class="row"><span class="info file">faq_main_empty_group.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page">
+										<div class="row"><a class="info title">FAQ(intent 없음)</a><span class="info date">2020-10-16</span></div>
+										<div class="row"><span class="info file">faq_main_empty_intent.html</span><span class="info id">화면ID</span></div>
+									</div>
+									
+		
+								</div>
+							</div>
+							<div class="depth split">
+								<div class="title">FAQ 업무팝업</div>
+								<div class="conts">
+									
+									<div class="page popup">
+										<div class="row"><a class="info title">그룹 생성</a><span class="info date">2020-10-14</span></div>
+										<div class="row"><span class="info file">faq_modal_popup_newgroup.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page popup">
+										<div class="row"><a class="info title">그룹 이름변경</a><span class="info date">2020-10-16</span></div>
+										<div class="row"><span class="info file">faq_modal_popup_renamegroup.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page popup">
+										<div class="row"><a class="info title">그룹 삭제</a><span class="info date">2020-10-14</span></div>
+										<div class="row"><span class="info file">faq_modal_popup_deletegroup.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page popup">
+										<div class="row"><a class="info title">FAQ 삭제</a><span class="info date">2020-10-16</span></div>
+										<div class="row"><span class="info file">faq_modal_popup_deletefaq.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page popup">
+										<div class="row"><a class="info title">FAQ 불러오기</a><span class="info date">2020-10-14</span></div>
+										<div class="row"><span class="info file">faq_modal_popup_importfaq.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page popup">
+										<div class="row"><a class="info title">전체 질문 삭제</a><span class="info date">2020-10-16</span></div>
+										<div class="row"><span class="info file">faq_modal_popup_deletequestion.html</span><span class="info id">화면ID</span></div>
+									</div>
+		
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="depth">
+						<div class="title">User Management<span class="dir">html/bot_designer/usermanagement</span></div>
+						<div class="conts">
+							
+							<div class="depth split">
+								<div class="title">사용자관리</div>
+								<div class="conts">
+									
+									<div class="page">
+										<div class="row"><a class="info title">사용자관리</a><span class="info date">2020-10-16</span></div>
+										<div class="row"><span class="info file">usermanage_main.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page">
+										<div class="row"><a class="info title">사용자관리(검색결과 없음)</a><span class="info date">2020-10-16</span></div>
+										<div class="row"><span class="info file">usermanage_empty_result.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page">
+										<div class="row"><a class="info title">사용자관리(유저 없음)</a><span class="info date">2020-10-16</span></div>
+										<div class="row"><span class="info file">usermanage_empty_user.html</span><span class="info id">화면ID</span></div>
+									</div>
+		
+								</div>
+							</div>
+							<div class="depth split">
+								<div class="title">사용자관리 업무팝업</div>
+								<div class="conts">
+									
+									<div class="page popup">
+										<div class="row"><a class="info title">사용자 삭제</a><span class="info date">2020-10-16</span></div>
+										<div class="row"><span class="info file">usermanage_modal_popup_deleteuser.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page popup">
+										<div class="row"><a class="info title">권한 편집</a><span class="info date">2020-10-16</span></div>
+										<div class="row"><span class="info file">usermanage_modal_popup_editrole.html</span><span class="info id">화면ID</span></div>
+									</div>
+									<div class="page popup">
+										<div class="row"><a class="info title">사용자 등록</a><span class="info date">2020-10-16</span></div>
+										<div class="row"><span class="info file">usermanage_modal_popup_joinuser.html</span><span class="info id">화면ID</span></div>
+									</div>
+		
+								</div>
+							</div>
+
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+			
+		</div>
+		<!-- E : IA -->
+		
+	</div>
+	<!-- E : container -->
+</div>
+<!-- E : layout -->
+
+</body>
+</html>
+

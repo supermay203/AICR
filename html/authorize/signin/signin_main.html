@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : Sign In
+* @ 파일명 : html/authorize/signin/signin_main.html
+* @ 수정이력
+* **********************************************************************************************************************
+*	날짜				작업자		내용
+* **********************************************************************************************************************
+* 	2020-10-14			EiLABsjs		최초작성
+* 	2020-10-16			EiLABsjs		마크업변경(인라인노티피케이션 구조변경, 로그인버튼 클래스 추가)
+* 	2020-10-21			EiLABsjs		마크업변경(경고인풋 클래스 변경)
+* 	2020-10-23			EiLAB		    마크업변경(이미지변환 img TAG -> 폰트어썸HTML, svg)
+* 	2020-10-29			EiLAB		    마크업변경(로고이미지 변경, 텍스트 변경)
+* **********************************************************************************************************************
+-->
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <title>Sign In</title>
+
+    <!-- Library -->
+    <script type="text/javascript" src="../../../resource/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../resource/js/jquery-ui-1.11.4.min.js"></script>
+
+    <!-- UI -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../../resource/css/ui_style.css"/>
+    <script type="text/javascript" src="../../../resource/js/ui_plugin.js"></script>
+    <script type="text/javascript" src="../../../resource/js/ui_script.js"></script>
+</head>
+
+<body>
+
+
+<!-- S : layout -->
+<div class="ta-layout">
+
+    <!-- S : 컨테이너영역 -->
+    <div class="ta-container-area">
+
+        <!-- S : 컨텐츠영역 -->
+        <div class="ta-contents-area">
+            <div class="ta-contents">
+                <!-- S : 여기서부터 컨텐츠 -->
+
+
+                <div class="ta-conts-signin">
+                    <div class="ta-brand-area">
+                        <!-- S : 수정이력 : * 	2020-10-29			EiLAB		마크업변경(로고이미지 변경, 텍스트 변경) -->
+                        <div class="ta-brand-msg">
+                           <!-- <div class="ta-bm-logo"><span class="ta-icon"><img
+                                    src="../../../resource/image/layout/icon-qt-logo-4.png" alt="" width="180px"/></span></div>-->
+                            <p class="ta-bm-main">
+                                <b>Faster, Easier and more Accurate</b><br>
+                                AI service provider
+                            </p>
+                        </div>
+                        <!-- S : 수정이력 : * 	2020-10-29			EiLAB		마크업변경(로고이미지 변경, 텍스트 변경) -->
+                    </div>
+                    <div class="ta-main-area">
+
+                        <!--<div class="ta-main-logo">
+                            <div class="ta-bm-logo"><span class="ta-icon">
+                                <img src="../../../resource/image/layout/icon-qt-logo.png" alt=""/></span>
+                            </div>
+                        </div>-->
+
+                        <div class="ta-main-login">
+                            <!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+                            <div class="ta-ml-cont">
+
+                                <div class="ta-login-title">
+                                    <span class="ta-lt-text">Welcome to Quantum AI Service</span>
+                                </div>
+
+                                <li>
+                                    <p class="ta-formmsg ta-warning">아이디와 패스워드를 입력하여 로그인 해 주세요.</p>
+                                </li>
+                                <div class="ta-login-input">
+                                    <ul>
+                                        <li>
+                                            <div class="ta-input ta-w-full">
+                                                <input type="text" placeholder="아이디" title="" value=""/>
+                                                <button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+                                                <!-- S : 레이이드롭다운 - ID list -->
+                                                <div class="ta-ip-dropdown"><!-- 활성화 className = ta-active -->
+                                                    <div class="ta-ipd-list">
+                                                        <ul>
+                                                            <li>선택1</li>
+                                                            <li>선택2</li>
+                                                            <li>선택3</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- S : 레이이드롭다운 - ID list -->
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <!-- S : 수정이력 : * 	2020-10-21			EiLABsjs		마크업변경(경고인풋 클래스 변경) -->
+                                            <!--                                            <div class="ta-input ta-w-full ta-warning ta-focus">-->
+                                            <div class="ta-input ta-w-full">
+                                                <input type="text" placeholder="패스워드" title="" value=""/>
+                                                <button type="button" class="ta-btn ta-input-clear">문구삭제</button>
+                                            </div>
+                                            <!-- E : 수정이력 : * 	2020-10-21			EiLABsjs		마크업변경(경고인풋 클래스 변경) -->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ta-login-btn">
+                                    <div class="ta-else-login">
+                                        <button type="button" class="ta-btn ta-t-login2"><span>Sign Up</span></button>
+                                        <button type="button" class="ta-btn ta-g-login2"><span>Login</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- E : 여기서부터 컨텐츠 -->
+            </div>
+        </div>
+        <!-- E : 컨텐츠영역 -->
+
+    </div>
+    <!-- E : 컨테이너영역 -->
+
+
+</div>
+<!-- E : layout -->
+
+
+</body>
+</html>
+
+

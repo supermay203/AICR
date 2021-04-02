@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* version 1.0 | 2020-10-30 */
+
+
+/********************************************************************************************************
+   범주
+*********************************************************************************************************/
+/* 범주 - 소분류 */
+
+
+
+
+
+
+/********************************************************************************************************
+   Authorize - signin
+*********************************************************************************************************/
+/* signin - 레이아웃 */
+.ta-conts-signin { display: table; width: 100%; height: 100%; background: #f2f4f6; }
+.ta-conts-signin .ta-brand-area { position: relative; display: table-cell; vertical-align: middle; width: 46%; background: url('../image/content/signin/login-brandbg.png') no-repeat center; background-size: cover; }
+.ta-conts-signin .ta-main-area { display: table-cell; vertical-align: middle; }
+
+/* signin - 배치 */
+.ta-conts-signin .ta-brand-msg { width: 504px; margin: 0 auto; }
+.ta-conts-signin .ta-brand-msg .ta-bm-main { margin-top: 32px; }
+.ta-conts-signin .ta-brand-msg .ta-bm-sub { margin-top: 136px; }
+.ta-conts-signin .ta-main-login { margin: 0 auto; }
+.ta-conts-signin .ta-ml-cont { position: relative; }
+.ta-conts-signin .ta-login-title { margin-bottom: 50px; }
+.ta-conts-signin .ta-login-top-right-logo { margin-top: 10px; align-items: center;}
+.ta-conts-signin .ta-login-input > ul > li { margin-top: 20px; }
+.ta-conts-signin .ta-login-input > ul > li:first-child { margin-top: 0; }
+.ta-conts-signin .ta-login-input .ta-checkbox { margin-top: 24px; }
+.ta-conts-signin .ta-login-btn { margin-top: 40px; }
+.ta-conts-signin .ta-login-btn .ta-else { margin-top: 54px; }
+.ta-conts-signin .ta-login-btn .ta-else-login { margin-top: 54px; }
+
+/* signin - 컨텐츠 */
+.ta-conts-signin .ta-brand-msg .ta-bm-logo .ta-icon { width: 154px; }
+.ta-conts-signin .ta-brand-msg .ta-bm-main { font-size: 26px; line-height: 42px; color: #ffffff; }
+.ta-conts-signin .ta-brand-msg .ta-bm-sub { font-size: 16px; line-height: 30px; color: rgba(255,255,255,.8); }
+.ta-conts-signin .ta-brand-msg .ta-bm-sub { position: relative; }
+.ta-conts-signin .ta-brand-msg .ta-bm-sub:before { content: ''; position: absolute; top: -72px; left: 4px; width: 10px; height: 3px; background: #3a4dd2; }
+.ta-conts-signin .ta-main-area { background: #f2f4f6; }
+.ta-conts-signin .ta-main-logo { position: absolute; top: 10px; right: 30px; margin-top:0px;}
+.ta-conts-signin .ta-main-logo .ta-bm-logo .ta-icon { width: 154px; }
+.ta-conts-signin .ta-main-login { width: 450px; padding: 100px 0; }
+.ta-conts-signin .ta-login-title .ta-lt-text { display: inline-block; vertical-align: middle; font-size: 30px; font-weight: 700; color: #363949; }
+.ta-conts-signin .ta-login-title .ta-lt-route { display: inline-block; margin-left: 11px; vertical-align: middle; padding: 0 8px; font-size: 12px; font-weight: 700; line-height: 24px; border-radius: 11px; }
+.ta-conts-signin .ta-login-title .ta-lt-route.ta-ltr-dev { color: #3564ff; background: rgba(53, 100, 255, .1); }
+.ta-conts-signin .ta-login-title .ta-lt-route.ta-ltr-prd { color: #ffb44a; background: rgba(255, 180, 74, .1); }
+.ta-conts-signin .ta-login-input .ta-input input { height: 60px; font-size: 16px; }
+.ta-conts-signin .ta-login-input .ta-checkbox label .ta-label { color: #1d1f23; }
+.ta-conts-signin .ta-login-btn .ta-btn.ta-basic-login { width: 100%; height: 60px; padding: 0 10px; line-height: 60px; font-size: 16px; text-align: center; border-radius: 12px; box-sizing: border-box; }
+.ta-conts-signin .ta-login-btn .ta-btn.ta-basic-login2 { min-height: 60px; padding: 5px 10px; font-size: 16px; color: #ffffff; text-align: center; border-radius: 8px; box-sizing: border-box; background: #2d2d2d; }
+.ta-conts-signin .ta-login-btn .ta-else { position: relative; text-align: center; }
+.ta-conts-signin .ta-login-btn .ta-else span { z-index: 10; position: relative; display: inline-block; padding: 0 17px; line-height: 24px; font-size: 14px; color: #404040; background: #f2f4f6; }
+.ta-conts-signin .ta-login-btn .ta-else:before { content: ''; position: absolute; top: 50%; left: 0; width: 100%; height: 1px; background: #999a9b; }
+.ta-conts-signin .ta-login-btn .ta-else-login { font-size: 0; }
+.ta-conts-signin .ta-login-btn .ta-else-login .ta-btn.ta-t-login { vertical-align: top; width: calc(50% - 7px); }
+.ta-conts-signin .ta-login-btn .ta-else-login .ta-btn.ta-t-login2 { vertical-align: top; width: calc(50% - 7px); }
+.ta-conts-signin .ta-login-btn .ta-else-login .ta-btn.ta-g-login { vertical-align: top; width: calc(50% - 7px); margin-left: 14px; }
+.ta-conts-signin .ta-login-btn .ta-else-login .ta-btn.ta-g-login2 { vertical-align: top; width: calc(50% - 7px); margin-left: 14px; }
+.ta-conts-signin .ta-login-btn .ta-btn.ta-t-login { min-height: 60px; padding: 5px 10px; font-size: 16px; color: #ffffff; text-align: center; border-radius: 8px; box-sizing: border-box; background: #2d2d2d; }
+.ta-conts-signin .ta-login-btn .ta-btn.ta-t-login2 { min-height: 60px; padding: 5px 10px; font-size: 16px; color: #ffffff; text-align: center; border-radius: 8px; box-sizing: border-box; background: #3564ff; }
+.ta-conts-signin .ta-login-btn .ta-btn.ta-g-login { min-height: 60px; padding: 5px 10px; font-size: 16px; color: #404040; text-align: center; border: 1px solid #e5e6ed; border-radius: 8px; box-sizing: border-box; background: #ffffff; }
+.ta-conts-signin .ta-login-btn .ta-btn.ta-g-login2 { min-height: 60px; padding: 5px 10px; font-size: 16px; color: #404040; text-align: center; border: 1px solid #e5e6ed; border-radius: 8px; box-sizing: border-box; background: #ffffff; }
+.ta-conts-signin .ta-login-btn .ta-btn.ta-t-login span { display: inline-block; padding-left: 29px; background: url('../image/content/signin/login-t-icon.svg')no-repeat left center; }
+.ta-conts-signin .ta-login-btn .ta-btn.ta-t-login2 span { display: inline-block; text-align: center;}
+.ta-conts-signin .ta-login-btn .ta-btn.ta-g-login span { display: inline-block; padding-left: 27px; background: url('../image/content/signin/login-g-icon.svg')no-repeat left center; }
+.ta-conts-signin .ta-login-btn .ta-btn.ta-g-login2 span { display: inline-block; text-align: center;}
+.ta-conts-signin .ta-login-btn .ta-btn.ta-t-login:disabled,
+.ta-conts-signin .ta-login-btn .ta-btn.ta-t-login2:disabled,
+.ta-conts-signin .ta-login-btn .ta-btn.ta-t-login[disabled="disabled"],
+.ta-conts-signin .ta-login-btn .ta-btn.ta-t-login2[disabled="disabled"],
+.ta-conts-signin .ta-login-btn .ta-btn.ta-g-login:disabled,
+.ta-conts-signin .ta-login-btn .ta-btn.ta-g-login2:disabled,
+.ta-conts-signin .ta-login-btn .ta-btn.ta-g-login[disabled="disabled"] { opacity: .3; }
+.ta-conts-signin .ta-login-btn .ta-btn.ta-g-login2[disabled="disabled"] { opacity: .3; }
+
+/* signin - 인풋 - 드롭다운 */
+.ta-ip-dropdown { z-index: -5; opacity: 0; }
+.ta-ip-dropdown.ta-active { z-index: 20; opacity: 1; }
+
+.ta-ip-dropdown { position: absolute; top: 70px; left: 0; }
+.ta-ip-dropdown { overflow: hidden; width: 100%; border-radius: 8px; border: 1px solid #e5e6ed; background: #ffffff;  }
+.ta-ip-dropdown .ta-ipd-list { max-height: 200px; }
+.ta-ip-dropdown .ta-ipd-list ul > li { padding: 10px 18px; font-size: 13px; color: #303030; cursor: pointer; }
+.ta-ip-dropdown .ta-ipd-list ul > li:hover { background: #f2f2f6; }
+
+
+
+/********************************************************************************************************
+   봇디자이너 - FAQ
+*********************************************************************************************************/
+.ta-page-subhead { padding-top: 30px; box-sizing: border-box; }
+.ta-page-tab { width: 100%; padding-top: 15px; _background: #ffffff; border-bottom: 1px solid #dfe1e4; }
+
+
+/* 검색영역 */
+.ta-search-section {  }
+.ta-search-section:after { content: ''; display: block; clear: both; }
+.ta-search-section .ta-inquiry-area { float: left; }
+.ta-search-section .ta-btn-area { float: right; }
+.ta-search-section .ta-btn-area > * { margin-left: 6px; }
+.ta-search-section .ta-btn-area > *:first-child { margin-left: 0; }
+.ta-search-section .ta-btn-area .ta-user-normal-btn { display: inline-block; }
+.ta-search-section .ta-btn-area .ta-user-edit-btn { display: inline-block; }
+.ta-search-section .ta-btn-area .ta-user-icon-btn { display: inline-block; }
+.ta-search-section .ta-btn-area .ta-user-icon-btn button + button { margin-left: 6px; }
+.ta-btn.ta-add-intent .ta-ai-txt { display: inline-block; padding-left: 9px; box-sizing: border-box; }
+
+/* 아이템선택영역 */
+.ta-item-section { position: relative; }
+.ta-item-section .ta-is-item { display: inline-block; vertical-align: middle; font-size: 14px; line-height: 24px; color: #2b2e34; }
+.ta-item-section .ta-is-btn { position: relative; display: inline-block; padding-left: 20px; margin-left: 35px; vertical-align: middle; box-sizing: border-box; }
+.ta-item-section .ta-is-btn:before { content: ''; position: absolute; top: 50%; left: 0; width: 1px; height: 30px; margin-top: -15px; background: #dfe1e4; } 
+.ta-item-section .ta-is-btn > * { margin-left: 6px; }
+.ta-item-section .ta-is-btn > *:first-child { margin-left: 0; }
+.ta-btn-item-trash { width: 40px; height: 40px; border-radius: 6px; background: #ffffff; }
+.ta-btn-item-movegroup { width: 40px; height: 40px; border-radius: 6px; background: #ffffff; }
+
+
+/* 레이어 드롭다운 -  탭메뉴 옵션 */
+.ta-layer-dropdown.ta-ld-tmopt { width: 139px; top: 30px; left: 50%; }
+.ta-layer-dropdown.ta-ld-tmopt .ta-ld-box { border-radius: 6px; }
+.ta-tmlist > ul > li .ta-tm-list { width: 100%; padding: 14px 17px; line-height: initial; text-align: left; font-size: 13px; color: #303030; box-sizing: border-box; }
+.ta-tmlist > ul > li .ta-tm-list .ta-ol-txt { display: inline-block; padding-left: 11px; }
+
+
+/* 페이지네이션 */
+.ta-cont-pagination::after { content: ''; display: block; clear: both; }
+.ta-cont-pagination .ta-item-wrap { float: left; }
+.ta-cont-pagination .ta-result-item-wrap { float: left; }
+.ta-cont-pagination .ta-loading-item-wrap { float: left; }
+.ta-cont-pagination .ta-paging-wrap { float: right; }
+
+.ta-loading-item-wrap  .ta-liw-txt { font-size: 13px; color: #2b2e34; line-height: 59px; }
+.ta-result-item-wrap .ta-riw-txt { font-size: 13px; color: #2b2e34; line-height: 59px; }
+
+
+
+
+/********************************************************************************************************
+   봇디자이너 - FAQ(검색결과 없음)
+*********************************************************************************************************/
+.ta-empty-result { width: 100%; padding: 198px 0; text-align: center; box-sizing: border-box; }
+
+
+/********************************************************************************************************
+   봇디자이너 - FAQ(group 없음)
+*********************************************************************************************************/
+.ta-empty-group { width: 100%; padding: 190px 0; text-align: center; box-sizing: border-box; }
+.ta-empty-group .ta-eg-txt { margin-top: 45px; font-size: 16px; color: #404040; }
+.ta-empty-group .ta-eg-btn { margin-top: 25px; }
+
+
+/********************************************************************************************************
+   봇디자이너 - FAQ(intent 없음)
+*********************************************************************************************************/
+.ta-empty-intent { width: 100%; padding: 157px 0; text-align: center; box-sizing: border-box; }
+.ta-empty-intent .ta-ei-txt { margin-top: 38px; }
+.ta-empty-intent .ta-ei-txt > span { display: inline-block; margin-left: 16px; vertical-align: middle; }
+.ta-empty-intent .ta-ei-txt > span:first-child { margin-left: 0; }
+.ta-empty-intent .ta-ei-txt .ta-eit-msg { font-size: 16px; color: #404040; }
+.ta-empty-intent .ta-ei-txt .ta-eit-addbtn { min-width: 90px; min-height: 40px; padding: 9px 19px; font-size: 13px; color: #ffffff; line-height: 20px; border-radius: 5px; box-sizing: border-box;  background: #3564ff; }
+.ta-empty-intent .ta-ei-txt .ta-eit-movebtn { width: 40px; padding: 12px 0; border-radius: 6px; box-sizing: border-box; background: #ffffff; }
+
+
+/********************************************************************************************************
+   봇디자이너 - FAQ(유저 없음)
+*********************************************************************************************************/
+.ta-empty-user { width: 100%; padding: 223px 0; text-align: center; box-sizing: border-box; }
+
+
+
+
+/********************************************************************************************************
+   봇디자이너 - intent
+*********************************************************************************************************/
+/* intent - 배치 */
+.ta-eb-inner { margin: 0 -15px; }
+.ta-cic-section { display: table; width: 100%; }
+.ta-cic-section .ta-cic-cell { display: table-cell; padding: 0 15px; vertical-align: top; box-sizing: border-box; }
+
+/* intent - 스타일 */
+.ta-ci-header { position: relative; margin: 0 30px; padding: 23px 0 18px 0; border-bottom: 1px solid #e5e6ed; box-sizing: border-box; }
+.ta-ci-header .ta-btn-intent-close { position: absolute; top: 50%; left: -9px; width: 30px; height: 30px; margin-top: -14px; }
+.ta-ci-header .ta-cih-title { padding-left: 30px; font-size: 16px; font-weight: 700; color: #303030; line-height: 24px; box-sizing: border-box; }
+.ta-ci-content { overflow: hidden; overflow-y: auto; height: 100%; padding: 27px 30px; box-sizing: border-box; }
+.ta-cic-cell .ta-cic-title .ta-cict-title { display: inline-block; padding-left: 5px; vertical-align: middle; font-size: 14px; font-weight: 700; color: #303030; }
+.ta-cic-cell .ta-cic-cont { padding-top: 16px; }
+
+/* intent - 스타일 - 질문 */
+.ta-cic-cont .ta-cicc-q-list { margin-top: 12px; }
+.ta-cic-cont .ta-cicc-q-list .ta-cq-button { margin-bottom: 9px; text-align: right; }
+.ta-cqs-input { z-index: 20; position: relative; }
+.ta-cqs-input .ta-input.ta-type-search input { border-radius: 6px 6px 0 0; border-bottom: 1px solid transparent; background: transparent;  }
+.ta-cqs-input .ta-input.ta-type-search input:hover { border-bottom: 1px solid #82828d !important; }
+.ta-cqs-input .ta-input.ta-type-search input:focus { border-bottom: 1px solid #82828d !important; }
+.ta-cqs-input + .ta-cqs-list > ul > li:first-child .ta-fi-info-box { border-radius: 0; }
+.ta-cqs-input + .ta-cqs-list > ul > li:first-child .ta-fi-edit-box { margin-top: -1px; }
+.ta-cqs-list > ul > li + li .ta-fi-edit-box { margin-top: -1px; }
+.ta-cqs-list > ul > li:first-child .ta-fi-info-box { margin-top: 0; border-radius: 6px 6px 0 0; }
+.ta-cqs-paging { width: 100%; height: 40px; margin-top: -1px; padding: 5px 7px; border: 1px solid #e5e6ed; border-radius: 0 0 6px 6px; box-sizing: border-box; }
+.ta-cqs-paging .ta-paging-number { display: inline-block; vertical-align: middle; font-size: 13px; color: #2b2e34; margin-right: 4px; }
+.ta-pn-import { font-weight: 900; }
+.ta-cqs-paging:after { content: ''; display: block; clear: both; }
+.ta-cqs-paging .ta-iw-num { float: left; padding: 5px 0 5px 8px; }
+
+/* intent - 스타일 - 봇답변 */
+.ta-cicc-a-item.ta-error { border: 1px solid #ea4f4f !important; }
+.ta-cicc-a-item:first-child.ta-error { border-radius: 6px 6px 0 0; }
+.ta-cicc-a-item:last-child.ta-error { border-radius: 0 0 6px 6px; }
+.ta-cicc-a-item .ta-ca-title { width: 100%; min-height: 40px; padding: 10px 11px; border: 1px solid #e5e6ed; box-sizing: border-box; }
+.ta-cicc-a-item:first-child .ta-ca-title { border-radius: 6px 6px 0 0; }
+.ta-cicc-a-item + .ta-cicc-a-item .ta-ca-title { border-top: none; }
+.ta-cicc-a-item .ta-ca-title.ta-active { padding-bottom: 0; }
+.ta-cicc-a-item .ta-ca-title.ta-active .ta-cat-input { display: block; }
+.ta-cicc-a-item .ta-ca-title .ta-cat-wrap:after { content: ''; display: block; clear: both; }
+.ta-cicc-a-item .ta-ca-title .ta-cat-title { float: left; line-height: 20px; font-size: 13px; font-weight: 900; color: #303030; }
+.ta-cicc-a-item .ta-ca-title .ta-btn-switch { float: right; }
+.ta-cicc-a-item .ta-cat-input { display: none; width: 100%; height: 40px; }
+.ta-cicc-a-item .ta-ca-conts { width: 100%; border: 1px solid #e5e6ed; border-top: none; box-sizing: border-box; background: #f2f2f6; }
+.ta-ca-conts .ta-cac-url { padding: 17px 11px 19px; text-align: center; }
+.ta-ca-conts .ta-cac-url > p { font-size: 12px; line-height: 18px; color: #97979a; }
+.ta-ca-conts .ta-cac-url .ta-btn-upload { margin-top: 19px; width: 100%; min-height: 32px; padding: 5px 19px; font-size: 12px; }
+.ta-ca-conts .ta-cac-url .ta-formset-url { margin-top: 10px; }
+.ta-cicc-a-item .ta-cac-btnwrap { width: 100%; margin-top: -1px; border-radius: 0 0 6px 6px; border: 1px solid #e5e6ed; box-sizing: border-box; }
+
+/* intent - 스타일 - 미리보기 */
+.ta-cic-cell .ta-cic-cont .ta-cp-output { display: none; overflow: hidden; min-height: 275px; border: 1px solid #e6eaf5; border-radius: 8px; }
+.ta-cic-cell .ta-cic-cont .ta-cp-output.ta-active { display: block; }
+.ta-cp-op-empty { padding: 108px 0; text-align: center; border-radius: 8px; background: #f2f2f6; }
+.ta-cp-output.ta-active + .ta-cp-op-empty { display: none; }
+
+/* 페이크 인풋 */
+.ta-fakeinput-wrap { min-height: 40px; box-sizing: border-box; } 
+.ta-fakeinput-wrap.ta-mode-edit .ta-fi-info-box { display: none; }
+.ta-fakeinput-wrap .ta-fi-edit-box { display: none; }
+.ta-fakeinput-wrap.ta-mode-edit .ta-fi-edit-box { display: block; }
+
+.ta-fi-info-box { position: relative; margin-top: -1px; padding: 10px 42px 10px 15px; border: 1px solid #e5e6ed; box-sizing: border-box; cursor: pointer; }
+.ta-fi-info-box .ta-fii-txt { font-size: 13px; color: #303030; }
+.ta-fi-info-box .ta-btn-trash { display: none; position: absolute; top: 50%; right: 12px; margin-top: -15px; }
+.ta-fi-info-box:hover { background: #f6f7f9; }
+.ta-fi-info-box:hover .ta-btn-trash { display: block; }
+
+.ta-fi-edit-box { position: relative; z-index: 10; }
+.ta-fi-edit-box input:focus { border: 1px solid #333333; border-radius: 0;  }
+.ta-fi-edit-box input { border-radius: 0; }
+
+
+/* .ta-conts-faq-intent .ta-output { overflow: hidden; min-height: 146px; border: 1px solid #e5e6ed; border-radius: 8px; }
+.ta-conts-faq-intent .ta-output .ta-output-empty { padding: 61px 0; line-height: 24px; text-align: center; font-size: 12px; color: rgba(48, 48, 48, .5); background: #e5e6ed; } */
+
+
+
+
+
+/********************************************************************************************************
+   에러페이지
+*********************************************************************************************************/
+.ta-error-area { width: 100%; padding: 164px 0 100px; text-align: center; box-sizing: border-box; }
+.ta-error-area .ta-er-maintxt { margin-top: 40px; font-size: 30px; line-height: 50px; font-weight: 700; color: #2b2e34; }
+.ta-error-area .ta-er-subtxt { margin-top: 24px; font-size: 16px; line-height: 26px; color: #82828d; }
+.ta-error-area .ta-er-btn { margin-top: 34px; }
+.ta-error-area .ta-er-btn > button { min-width: 130px; }
+.ta-error-area .ta-er-info { display: inline-block; margin-top: 55px; font-size: 14px; color: #82828d; border-bottom: 1px solid #babbc1;  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

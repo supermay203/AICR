@@ -1,0 +1,19 @@
+<svg id="구성_요소_2_1" data-name="구성 요소 2 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10.607" height="10.607" viewBox="0 0 10.607 10.607">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="10.607" height="10.607" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="사각형_19" data-name="사각형 19" transform="translate(9.192 0) rotate(45)" fill="#4b4c4c" stroke="#4b4c4c" stroke-linecap="round" stroke-width="1">
+    <rect width="2" height="13" rx="1" stroke="none"/>
+    <rect x="0.5" y="0.5" width="1" height="12" rx="0.5" fill="none"/>
+  </g>
+  <g id="반복_그리드_1" data-name="반복 그리드 1" transform="translate(0)" clip-path="url(#clip-path)">
+    <g transform="translate(-1010 -100.636)">
+      <g id="사각형_20" data-name="사각형 20" transform="translate(1020.607 109.828) rotate(135)" fill="#4b4c4c" stroke="#4b4c4c" stroke-linecap="round" stroke-width="1">
+        <rect width="2" height="13" rx="1" stroke="none"/>
+        <rect x="0.5" y="0.5" width="1" height="12" rx="0.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

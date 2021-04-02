@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 16 16">
+      <image width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABH0lEQVQ4Ea2TTUoDURCEKy5i3PuDRMGdf2vxXh5Ct3oXUZKdBC9gRDyAghp1E3XpJzX2i80wwQgWNNRUdzWv3/QTMC22gXdgDGxOq8vmBaAbhfNAjx+chuacawpXaWDzIOqHwCh4xiNwHcIF0LG3VXWRupLuTP6AVUkPc2G4l3QbfBYMbTYpDTqSFoMbPtaJpBVJG5KOQyuw3q4+gJ3ahXnGo7ibHNYyzu114i2rwZdqZtctRy5j7BFa5Vy/II8wKXWDPUn9ifJNDmrfTZo9+2VG70H+95/AYYziMLdW8AS07S0NHDclOwOuiu/fFulF0mXM7YV6Dp4xSss2kPRaJctR4oGsB/ee99MoZ+kBrcWdVb5ibopd4COe9FZjDegLQm8Itf9tt6IAAAAASUVORK5CYII="/>
+    </pattern>
+  </defs>
+  <rect id="icon_setting" width="16" height="16" fill="url(#pattern)"/>
+</svg>

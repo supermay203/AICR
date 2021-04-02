@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : [레이어] Circle Progress
+* @ 파일명 : html/_guide/layer/layer_circle_progress.html
+* @ 수정이력
+* **********************************************************************************************************************
+*	날짜				작업자		요청자/상세내용
+* **********************************************************************************************************************
+* 	2020-10-21			EiLABsjs		최초작성
+* **********************************************************************************************************************
+-->
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>[레이어] Circle Progress</title>
+
+	<!-- Library -->
+	<script type="text/javascript" src="../../../resource/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../../../resource/js/jquery-ui-1.11.4.min.js"></script>	
+
+	<!-- UI -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../../resource/css/ui_style.css" />
+	<script type="text/javascript" src="../../../resource/js/ui_plugin.js"></script>
+	<script type="text/javascript" src="../../../resource/js/ui_script.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- S : layout -->
+<div class="ta-layout">
+
+	<!-- S : 탑메뉴바영역 -->
+	<div class="ta-topmenu-area templayout">
+		<div class="ta-tm-inner">
+			<div class="ta-homemenu-area"><img src="../../../resource/image/layout_temp/topbar-left.png" alt="" /></div>
+			<div class="ta-mainmenu-area"><img src="../../../resource/image/layout_temp/topbar-center.png" alt="" /></div>
+			<div class="ta-idpdmenu-area"><img src="../../../resource/image/layout_temp/topbar-right.png" alt="" /></div>
+		</div>
+	</div>
+	<!-- E : 탑메뉴바영역 -->
+	
+	<!-- S : 컨테이너영역 -->
+	<div class="ta-container-area">
+		<!-- S : 테스트봇영역 -->
+		<div class="ta-testbot-area"><!-- 봇영역열기 className = ta-bt-open -->
+			<div class="ta-testbot">
+				테스트봇영역
+			</div>
+		</div>
+		<!-- E : 테스트봇영역 -->
+		
+		<!-- S : 컨텐츠영역 -->
+		<div class="ta-contents-area">
+			<!-- S : 사이드메뉴바영역 -->
+			<div class="ta-sidemenu-area templayout"><!-- 사이드메뉴접기 className = ta-sm-fold -->
+				<div class="ta-sm-contain">
+					<div class="ta-bottest"></div>
+				</div>
+			</div>
+			<!-- E : 사이드메뉴바영역 -->
+
+			<div class="ta-contents">
+
+				<div class="ta-page-head">
+				</div>
+
+
+				<div class="ta-page-cont">
+					<!-- S : 여기서부터 컨텐츠 -->
+
+					시작<br><br><br><br><br>
+					scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>
+					scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>
+					끝
+
+
+					<!-- E : 여기까지 컨텐츠 -->
+				</div>
+
+
+
+				<!-- S : Circle Progress -->
+				<!--  
+					※Circle Progress Guide
+					활성화 className = ta-active 
+					프로그래스바(업로드진행률반영) 하단 스크립트 참고.
+				-->
+				<div class="ta-progress ta-active"><!-- 활성화 className = ta-active  -->
+					<div class="ta-prg-shape">
+						<svg class="ta-svg-prg">
+							<circle r="46" cx="50" cy="50" fill="transparent" stroke-dasharray="289" stroke-dashoffset="0"></circle>
+							<circle class="ta-prg-ingbar" r="46" cx="50" cy="50" fill="transparent" stroke-dasharray="289" stroke-dashoffset="289.1"></circle>
+						</svg>
+					</div>
+					<div class="ta-prg-msg"><span class="ta-prgm-txt">FAQ 업로드 중</span><span class="ta-prgm-dot-wrap"><span class="ta-prgm-dot">.</span><span class="ta-prgm-dot">.</span><span class="ta-prgm-dot">.</span></span></div>
+				</div>
+				<!-- E : Circle Progress -->
+				
+
+
+				
+			</div>
+		</div>
+		<!-- E : 컨텐츠영역 -->
+		
+	</div>
+	<!-- E : 컨테이너영역 -->
+
+	
+
+</div>
+<!-- E : layout -->
+
+
+
+<script>
+	// Circle Progress 참고스크립트
+	var prgBar = document.querySelector('.ta-prg-ingbar');
+	var prgBarRadius = 46;
+	var prgBarCircumference = 2 * Math.PI * prgBarRadius;
+
+	function taPrgVal(prgBarValue){
+		var prgProgress = prgBarValue / 100;
+		var prgCircleDashoffset = prgBarCircumference * (1 - prgProgress);
+		
+		prgBar.style.strokeDashoffset = prgCircleDashoffset;
+	};
+
+	
+	taPrgVal(55);//(100분율값)
+</script>
+
+
+
+
+</body>
+</html>

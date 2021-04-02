@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="16" viewBox="0 0 14 16">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 14 16">
+      <image width="14" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAArklEQVQoFZ1SQQ7CMAxzgQs7Ig48BP4HPIsbGvsF/GTIKG0S5bCqHZbaeLWtVFlBMq49yRvJN8lZl3A5E829TkgOJCfWIZp4ciYG7/WMK9eloFyphY8FU25bMAPY2kcFXwA7IRs1SKAVMl+GBQ9aezDIZsGj1h6cZLPgWWsPLtmkU3q2xhn0Rx4oyTEc9tLRrroWKf7HVeF/O5ZXsAB/TqolrY5ax5c7gCnwQgH8AGi2PljsW9Z2AAAAAElFTkSuQmCC"/>
+    </pattern>
+  </defs>
+  <rect id="icon_Noti" width="14" height="16" fill="url(#pattern)"/>
+</svg>

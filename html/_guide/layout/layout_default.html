@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : 레이아웃
+* @ 파일명 : html/_guide/layout/layout_default.html
+* @ 수정이력
+* **********************************************************************************************************************
+*	날짜				작업자		내용
+* **********************************************************************************************************************
+* 	2020-10-12			EiLAB		최초작성
+* 	2020-10-14			EiLAB		마크업변경(lnb사용자관리메뉴 추가, 레이어드롭다운마이봇목록, 타이틀영역추가)
+* 	2020-10-16			EiLAB		마크업변경(컨텐츠영역 변경, 토스트팝업영역 추가)
+* 	2020-10-21			EiLAB		마크업변경(생성된 봇이 없는 경우 로고 추가)
+* 	2020-10-23			EiLAB		마크업변경(이미지변환 img TAG -> 폰트어썸HTML, svg, lnb 대시보드 메뉴추가)
+* **********************************************************************************************************************
+-->
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>레이아웃</title>
+
+	<!-- Library -->
+	<script type="text/javascript" src="../../../resource/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../../../resource/js/jquery-ui-1.11.4.min.js"></script>
+	
+	<!-- UI -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../../resource/css/ui_style.css" />
+	<script type="text/javascript" src="../../../resource/js/ui_plugin.js"></script>
+	<script type="text/javascript" src="../../../resource/js/ui_script.js"></script>
+
+	
+</head>
+
+<body>
+
+
+
+<!-- S : layout -->
+<div class="ta-layout">
+
+	<!-- S : 탑메뉴바영역 -->
+	<div class="ta-topmenu-area">
+
+		<div class="ta-tm-inner">
+			<!-- S : 홈메뉴영역 -->
+			<div class="ta-homemenu-area">
+				<div class="ta-homemenu">
+
+					<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+					<span class="ta-hm-logo"><img src="../../../resource/image/layout/icon-aska-logo.svg" alt="" /></span><!-- 생성된 봇이 없는 경우: 활성화 className = ta-bot-none  -->
+					<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+
+					<div class="ta-hm-dpdmenu">
+
+						<!-- S : 레이이드롭다운 - mybot -->
+						<div class="ta-dd-mybot">
+							<div class="ta-mb-select"><!-- 활성화 className = ta-focus -->
+								<span class="ta-mb-name">T-Legalnet Bot</span>
+								<button type="button" class="ta-btn ta-tm-arrow"></button>
+							</div>
+							<div class="ta-layer-dropdown ta-ld-mybot"><!-- 활성화 className = ta-active -->
+								<div class="ta-ld-box">
+	
+									<div class="ta-cont-mybot">
+										<div class="ta-mb-title-area">My Bot</div>
+										<div class="ta-mb-conts-area">
+											<!-- S : 수정이력 : * 	2020-10-14			EiLAB		마크업변경(레이어드롭다운마이봇목록) -->
+											<div class="ta-mblist">
+												<ul class="ta-optlist">
+													<li class="">Tworld Bot</li>
+													<li class="ta-selected">Tworld direct Bot</li>
+												</ul>
+											</div>
+											<!-- E : 수정이력 : * 	2020-10-14			EiLAB		마크업변경(레이어드롭다운마이봇목록) -->
+										</div>
+	
+										<div class="ta-mb-btn-area">
+											<button type="button" class="ta-btn ta-btn-addbot">+ 새로운 봇 만들기</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- S : 레이이드롭다운 - mybot -->
+					</div>
+				</div>
+			</div>
+			<!-- E : 홈메뉴영역 -->
+	
+			<!-- S : 메인메뉴영역(1뎁스)  -->
+			<div class="ta-mainmenu-area">
+				<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+				<div class="ta-menu-lv1">
+					<ul>
+						<li class="ta-now"><!-- 메뉴활성화 className = ta-now -->
+							<a href="#" class="ta-mlv1-item">
+								<span class="ta-icon">
+									<i class="fas fa-th-large"></i>
+								</span>
+								<span class="ta-mlv1-txt">대시보드</span>
+							</a>
+						</li>
+						<li class="">
+							<a href="#" class="ta-mlv1-item">
+								<span class="ta-icon">
+									<i class="fas fa-comment-alt"></i>
+								</span>
+								<span class="ta-mlv1-txt">봇 디자이너</span>
+							</a>
+						</li>
+						<li class="">
+							<a href="#" class="ta-mlv1-item">
+								<span class="ta-icon">
+									<i class="fas fa-chart-pie"></i>
+								</span>
+								<span class="ta-mlv1-txt">봇 데이터 분석</span>
+							</a>
+						</li>
+						<li class="">
+							<a href="#" class="ta-mlv1-item">
+								<span class="ta-icon">
+									<i class="fas fa-layer-group"></i>
+								</span>
+								<span class="ta-mlv1-txt">API 관리</span>
+							</a>
+						</li>
+						<li class="">
+							<a href="#" class="ta-mlv1-item">
+								<span class="ta-icon">
+									<i class="fas fa-clipboard-list"></i>
+								</span>
+								<span class="ta-mlv1-txt">관리자</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+			</div>
+			<!-- E : 메인메뉴영역(1뎁스)  -->
+	
+			<!-- S : 독립메뉴영역  -->
+			<div class="ta-idpdmenu-area">
+				<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+				<div class="ta-idpd-item ta-idpd-setting"><!-- setting -->
+					<button type="button" class="ta-btn ta-btn-set"><span class="ta-icon"><img src="../../../resource/image/layout/icon-idpdmenu-setting.svg" alt="" /></span></button>
+				</div>
+				<div class="ta-idpd-item ta-idpd-noti"><!-- notification -->
+					<button type="button" class="ta-btn ta-btn-noti">
+						<span class="ta-icon"><img src="../../../resource/image/layout/icon-idpdmenu-notifications.svg" alt="" /></span>
+						<span class="ta-noti-bullet"></span>
+					</button>
+				</div>
+				<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+				<div class="ta-idpd-item ta-idpd-username"><!-- username -->
+					<!-- S : 레이이드롭다운 - my account(독립메뉴영역) -->
+
+					<div class="ta-dd-username">
+						<div class="ta-ma-select"><!-- 활성화 className = ta-focus -->
+							<span class="ta-ma-name">USER NAME</span>
+							<button type="button" class="ta-btn ta-tm-arrow"></button>
+						</div>
+						<div class="ta-layer-dropdown ta-ld-myaccount"><!-- 활성화 className = ta-active -->
+							<div class="ta-ld-box">
+		
+								<div class="ta-cont-myaccount">
+									<div class="ta-ma-list">
+										<ul>
+											<li>
+												<div class="ta-ma-user">
+													<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+													<div class="ta-mau-imgarea">
+														<div class="ta-mau-img">
+															<i class="fas fa-user"></i>
+														</div>
+													</div>
+													<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+													<div class="ta-mau-infoarea">
+														<p class="ta-ma-userid">Apollo</p>
+														<p class="ta-ma-useremail">Apollo@sktelecom.com</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="ta-ma-authority">
+													<dl>
+														<dt>내 계정 권한</dt>
+														<dd>개발자</dd>
+													</dl>
+												</div>
+											</li>
+											<li>
+												<div class="ta-ma-btn-area">
+													<ul>
+														<li><button type="button" class="ta-btn ta-ma-setting">내 계정 설정</button></li>
+														<li><button type="button" class="ta-btn ta-ma-logout">로그아웃</button></li>
+													</ul>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- S : 레이이드롭다운 - my account(독립메뉴영역) -->
+				</div>
+			</div>
+			<!-- E : 독립메뉴영역  -->
+		</div>
+
+		<!-- S : 레이이팝업 - notification(독립메뉴영역) -->
+		<div class="ta-layer-noti"><!-- 활성화 className = ta-active -->
+			<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+			<div class="ta-conts-noti">
+				<div class="ta-noti-list">
+					<div class="ta-nt-title-area">
+						<div class="ta-nt-title">알림</div>
+						<button type="button" class="ta-btn ta-clearall">전체삭제</button>
+					</div>
+					<div class="ta-nt-section">
+						<div class="ta-nt-timeline">
+							<ul>
+								<!-- S : date separator -->
+								<li>
+									<div class="ta-nt-date">
+										<span class="ta-ntd-txt">Today</span>
+										<button type="button" class="ta-btn ta-btn-nt-remove"></button>
+									</div>
+									<ol>
+										<!-- S : noti message -->
+										<li>
+											<div class="ta-nt-item">
+												<div class="ta-nti-icon"><img src="../../../resource/image/component/icon/icon-noti-info.svg" alt="" /></div>
+												<div class="ta-nti-desc">
+													<p class="ta-ntid-title">Notification Title</p>
+													<p class="ta-ntid-conts">This is a description of notification contents.</p>
+													<p class="ta-ntid-time">10:24 pm</p>
+												</div>
+											</div>
+										</li>
+										<!-- E : noti message -->
+	
+										<li>
+											<div class="ta-nt-item">
+												<div class="ta-nti-icon"><img src="../../../resource/image/component/icon/icon-noti-confirm.svg" alt="" /></div>
+												<div class="ta-nti-desc">
+													<p class="ta-ntid-title">Notification Title</p>
+													<p class="ta-ntid-conts">This is a description of notification contents.</p>
+													<p class="ta-ntid-time">10:24 pm</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="ta-nt-item">
+												<div class="ta-nti-icon"><img src="../../../resource/image/component/icon/icon-noti-warning.svg" alt="" /></div>
+												<div class="ta-nti-desc">
+													<p class="ta-ntid-title">Notification Title</p>
+													<p class="ta-ntid-conts">This is a description of notification contents.</p>
+													<p class="ta-ntid-time">10:24 pm</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="ta-nt-item">
+												<div class="ta-nti-icon"><img src="../../../resource/image/component/icon/icon-noti-error.svg" alt="" /></div>
+												<div class="ta-nti-desc">
+													<p class="ta-ntid-title">Notification Title</p>
+													<p class="ta-ntid-conts">This is a description of notification contents.</p>
+													<p class="ta-ntid-time">10:24 pm</p>
+												</div>
+											</div>
+										</li>
+									</ol>
+								</li>
+								<!-- E : date separator -->
+	
+								<li>
+									<div class="ta-nt-date">
+										<span class="ta-ntd-txt">Yesterdaty</span>
+										<button type="button" class="ta-btn ta-btn-nt-remove"></button>
+									</div>
+									<ol>
+										<li>
+											<div class="ta-nt-item">
+												<div class="ta-nti-icon"><img src="../../../resource/image/component/icon/icon-noti-info.svg" alt="" /></div>
+												<div class="ta-nti-desc">
+													<p class="ta-ntid-title">Notification Title</p>
+													<p class="ta-ntid-conts">This is a description of notification contents.</p>
+													<p class="ta-ntid-time">10:24 pm</p>
+												</div>
+											</div>
+										</li>
+									</ol>
+								</li>
+								<li>
+									<div class="ta-nt-date">
+										<span class="ta-ntd-txt">2020-08-29</span>
+										<button type="button" class="ta-btn ta-btn-nt-remove"></button>
+									</div>
+									<ol>
+										<li>
+											<div class="ta-nt-item">
+												<div class="ta-nti-icon"><img src="../../../resource/image/component/icon/icon-noti-error.svg" alt="" /></div>
+												<div class="ta-nti-desc">
+													<p class="ta-ntid-title">Notification Title</p>
+													<p class="ta-ntid-conts">This is a description of notification contents.</p>
+													<p class="ta-ntid-time">10:24 pm</p>
+												</div>
+											</div>
+										</li>
+									</ol>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- S : 알림없음 -->
+				<div class="ta-nt-empty" style="display: none;">
+					<div class="ta-nt-empty-cont">
+						<p class="ta-icon">
+							<i class="fas fa-envelope-open"></i>
+						</p>
+						<!-- <p class="ta-nte-txt">No notification</p> -->
+						<p class="ta-nte-txt">알림이 없습니다</p>
+					</div>
+				</div>
+				<!-- E : 알림없음 -->
+			</div>
+			<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+		</div>
+		<!-- E : 레이이팝업 - notification(독립메뉴영역) -->
+
+		<!-- S : 모달팝업 - setting(독립메뉴영역) -->
+		<div class="ta-modal-popup ta-mp-setting"><!-- 활성화 className = ta-active -->
+			<div class="ta-mp-layout">
+				<!-- S : 헤더 -->
+				<div class="ta-mp-header-area">
+					<div class="ta-mph-title">설정</div>
+					<button type="button" class="ta-btn ta-btn-mp-close" title="">팝업닫기</button>
+				</div>
+				<!-- E : 헤더 -->
+
+				<!-- S : 컨테이너 -->
+				<div class="ta-mp-container-area">
+					<div class="ta-contents">
+						<!-- S : 여기서부터 컨텐츠 -->
+
+
+
+						<div class="ta-conts-setting">
+							<div class="ta-setting-tabmenu">
+								<ul>
+									<li class="ta-on"><span class="ta-stm-title">Bot setting</span></li>
+									<li class=""><span class="ta-stm-title">Menu List 01</span></li>
+									<li class=""><span class="ta-stm-title">Menu List 01</span></li>
+									<li class=""><span class="ta-stm-title">Menu List 01</span></li>
+									<li class=""><span class="ta-stm-title">Menu List 01</span></li>
+								</ul>
+							</div>
+							<div class="ta-setting-tabcont">
+								<div class="ta-stc-item ta-on">
+									<div class="ta-stc-title">Bot setting</div>
+									<div class="ta-stc-conts">
+
+										<div class="ta-content">
+											탭목록1컨텐츠시작<br><br><br><br>
+											<!-- scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>
+											scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>
+											끝 -->
+										</div>
+										
+	
+									</div>
+								</div>
+								<div class="ta-stc-item">탭목록2컨텐츠</div>
+								<div class="ta-stc-item">탭목록3컨텐츠</div>
+								<div class="ta-stc-item">탭목록4컨텐츠</div>
+								<div class="ta-stc-item">탭목록5컨텐츠</div>
+							</div>
+						</div>
+
+
+
+						<!-- S : 여기까지 컨텐츠 -->
+					</div>
+				</div>
+				<!-- E : 컨테이너 -->
+
+			</div>
+		</div>
+		<!-- E : 모달팝업 - setting(독립메뉴영역) -->
+
+		
+		<!-- S : 수정이력 : * 	2020-10-16			EiLAB		마크업변경(토스트팝업영역 추가) -->
+		<!-- S : 토스트팝업영역 -->
+		<div class="ta-toastpop-area"><!-- 활성화 className = ta-active -->
+
+			<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+			<div class="ta-noti-toast">
+				<div class="ta-nm-icon">
+					<span class="ta-icon"><img src="../../../resource/image/component/icon/icon-noti-info.svg" alt=""></span>
+				</div>
+				<div class="ta-nm-conts">
+					<p class="ta-nm-title">Notification Title</p>
+					<p class="ta-nm-txt">This is a description of notification <br>contents.</p>
+					<div class="ta-btn-area">
+						<button type="button" class="ta-btn ta-btn-link">More Info</button>
+					</div>
+				</div>
+				<div class="ta-btn-ctrl">
+					<button type="button" class="ta-btn ta-btn-nm-close">알림메세지닫기</button>
+				</div>
+			</div>
+			
+			<div class="ta-noti-toast">
+				<div class="ta-nm-icon">
+					<span class="ta-icon"><img src="../../../resource/image/component/icon/icon-noti-info.svg" alt=""></span>
+				</div>
+				<div class="ta-nm-conts">
+					<p class="ta-nm-title">Notification Title</p>
+					<p class="ta-nm-txt">This is a description of notification <br>contents.</p>
+					<div class="ta-btn-area">
+						<button type="button" class="ta-btn ta-btn-link">More Info</button>
+					</div>
+				</div>
+				<div class="ta-btn-ctrl">
+					<button type="button" class="ta-btn ta-btn-nm-close">알림메세지닫기</button>
+				</div>
+			</div>
+
+			<div class="ta-noti-toast">
+				<div class="ta-nm-icon">
+					<span class="ta-icon"><img src="../../../resource/image/component/icon/icon-noti-info.svg" alt=""></span>
+				</div>
+				<div class="ta-nm-conts">
+					<p class="ta-nm-title">Notification Title</p>
+					<p class="ta-nm-txt">This is a description of notification <br>contents.</p>
+					<div class="ta-btn-area">
+						<button type="button" class="ta-btn ta-btn-link">More Info</button>
+					</div>
+				</div>
+				<div class="ta-btn-ctrl">
+					<button type="button" class="ta-btn ta-btn-nm-close">알림메세지닫기</button>
+				</div>
+			</div>
+
+			<div class="ta-noti-toast">
+				<div class="ta-nm-icon">
+					<span class="ta-icon"><img src="../../../resource/image/component/icon/icon-noti-info.svg" alt=""></span>
+				</div>
+				<div class="ta-nm-conts">
+					<p class="ta-nm-title">Notification Title</p>
+					<p class="ta-nm-txt">This is a description of notification <br>contents.</p>
+					<div class="ta-btn-area">
+						<button type="button" class="ta-btn ta-btn-link">More Info</button>
+					</div>
+				</div>
+				<div class="ta-btn-ctrl">
+					<button type="button" class="ta-btn ta-btn-nm-close">알림메세지닫기</button>
+				</div>
+			</div>
+
+			<div class="ta-noti-toast">
+				<div class="ta-nm-icon">
+					<span class="ta-icon"><img src="../../../resource/image/component/icon/icon-noti-info.svg" alt=""></span>
+				</div>
+				<div class="ta-nm-conts">
+					<p class="ta-nm-title">Notification Title</p>
+					<p class="ta-nm-txt">This is a description of notification <br>contents.</p>
+					<div class="ta-btn-area">
+						<button type="button" class="ta-btn ta-btn-link">More Info</button>
+					</div>
+				</div>
+				<div class="ta-btn-ctrl">
+					<button type="button" class="ta-btn ta-btn-nm-close">알림메세지닫기</button>
+				</div>
+			</div>
+			<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+			
+		</div>
+		<!-- S : 토스트팝업영역 -->
+		<!-- E : 수정이력 : * 	2020-10-16			EiLAB		마크업변경(토스트팝업영역 추가) -->
+		
+		
+	</div>
+	<!-- E : 탑메뉴바영역 -->
+
+	<!-- S : 컨테이너영역 -->
+	<div class="ta-container-area">
+
+		<!-- S : 테스트봇영역 -->
+		<div class="ta-testbot-area"><!-- 봇영역열기 className = ta-bt-open -->
+			<div class="ta-testbot">
+				
+				<div class="ta-tb-test-window">
+					<div class="ta-tb-view">
+						<!-- S : 여기서부터 봇테스트영역 -->
+
+
+						봇테스트영역
+
+
+						<!-- S : 여기까지 봇테스트영역 -->
+					</div>
+				</div>
+
+				<div class="ta-tb-test-tab">
+					<div class="ta-tb-tabmenu">
+						<ul>
+							<li class="ta-on"><span class="ta-tb-tm-title">Debug Log</span></li>
+							<li class=""><span class="ta-tb-tm-title">NL analytics</span></li>
+							<li class=""><span class="ta-tb-tm-title">Variables</span></li>
+							<li class=""><span class="ta-tb-tm-title">Performence</span></li>
+						</ul>
+					</div>
+
+					<div class="ta-tb-tabcont">
+						<div class="ta-tb-tc-item ta-on">
+							<!-- S : 여기서부터 소스영역 -->
+
+
+							소스
+
+
+							<!-- S : 여기까지 소스영역 -->
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- E : 테스트봇영역 -->
+
+		
+		<!-- S : 컨텐츠영역 -->
+		<div class="ta-contents-area">
+
+			<!-- S : 사이드메뉴바영역 -->
+			<div class="ta-sidemenu-area"><!-- 사이드메뉴접기 className = ta-smfold -->
+				<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+				<div class="ta-sm-contain">
+					<div class="ta-sm-header">
+						<button type="button" class="ta-btn ta-btn-sm-ctrl">
+							<span class="ta-icon-normal">
+								<i class="fas fa-bars"></i>
+							</span>
+						</button>
+						<div class="ta-mlv1-txt">봇 디자이너</div>
+						<div class="ta-sm-line"></div>
+					</div>
+					<div class="ta-sidemenu">
+						<div class="ta-menu-lv2">
+							<ul>
+								<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(lnb 대시보드 메뉴추가) -->
+								<li class=""><!-- 현재페이지 className = 'ta-now' -->
+									<a href="#" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+												<i class="fas fa-th-large"></i>
+											</span>
+										</span>
+										<span class="ta-mlv2-txt">대시보드</span>
+									</a>
+								</li>
+								<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(lnb 대시보드 메뉴추가) -->
+								<li class=""><!-- 현재페이지 className = 'ta-now' -->
+									<a href="#" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+												<i class="fas fa-project-diagram"></i>
+											</span>
+										</span>
+										<span class="ta-mlv2-txt">대화 시나리오</span>
+									</a>
+								</li>
+								<li class="ta-now"><!-- 하위메뉴열기 className = 'ta-child-open' -->
+									<a href="#" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+												<i class="fas fa-comments"></i>
+											</span>
+										</span>
+										<span class="ta-mlv2-txt">질문 - 답변 대화</span>
+										<span class="ta-btn ta-btn-lv3ctrl"></span><!-- 메뉴lv3 -->
+									</a>
+									<div class="ta-menu-lv3">
+										<ul>
+											<li class="ta-now">
+												<a href="#" class="ta-mlv3-item">
+													<span class="ta-mlv3-txt">FAQ대화</span>
+												</a>
+											</li>
+											<li class="">
+												<a href="#" class="ta-mlv3-item">
+													<span class="ta-mlv3-txt">기본·공통 대화</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="">
+									<a href="#" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+												<i class="fas fa-tag"></i>
+											</span>
+										</span>
+										<span class="ta-mlv2-txt">NLP 메타관리</span>
+									</a>
+								</li>
+								<!-- S : 수정이력 : * 	2020-10-14			EiLAB		마크업변경(lnb사용자관리메뉴 추가, 레이어드롭다운마이봇목록, 타이틀영역추가) -->
+								<li class="">
+									<a href="#" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+												<i class="fas fa-user"></i>
+											</span>
+										</span>
+										<span class="ta-mlv2-txt">사용자관리</span>
+									</a>
+								</li>
+								<!-- E : 수정이력 : * 	2020-10-14			EiLAB		마크업변경(lnb사용자관리메뉴 추가, 레이어드롭다운마이봇목록, 타이틀영역추가) -->
+							</ul>
+						</div>
+					</div>
+					<div class="ta-bottest"><!-- 활성화 className = ta-active -->
+						<div class="ta-sm-line"></div>
+						<button type="button" class="ta-btn ta-btn-bottest-ctrl">
+							<span class="ta-icon">
+								<span class="ta-icon-normal"><img src="../../../resource/image/layout/icon-testbot.svg" alt="" /></span>
+								<span class="ta-icon-active"><img src="../../../resource/image/layout/icon-testbot-active.svg" alt="" /></span>
+							</span>
+							<span class="ta-btn-txt">봇 테스트</span>
+						</button>
+					</div>
+				</div>
+				<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+			</div>
+			<!-- E : 사이드메뉴바영역 -->
+
+			<div class="ta-contents">
+
+				
+
+				<!-- S : 수정이력 : * 	2020-10-14			EiLAB		마크업변경(레이어드롭다운마이봇목록, 타이틀영역추가, 운영환경일 시 요소 추가) -->
+				<div class="ta-page-head">
+					<div class="ta-title-area">
+						<div class="ta-path">
+							<ul>
+								<li>
+									<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+									<a href="#" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+												<i class="fas fa-comments"></i>
+											</span>
+										</span>
+										<span class="ta-mlv2-txt">질문 - 답변 대화</span>
+									</a>
+									<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+									<div class="ta-btn-wrap">
+										<span class="ta-btn ta-btn-lv3ctrl"></span>
+										<div class="ta-layer-dropdown ta-ld-mlv3"><!-- 활성화 className = ta-active -->
+											<div class="ta-ld-box">
+												<div class="ta-conts-path-mlv3">
+													<div class="ta-path-mlv3-list">
+														<ul class="ta-optlist">
+															<li>
+																<a href="#" class="ta-mlv3-item"><span class="ta-mlv3-txt">FAQ대화</span></a>
+															</li>
+															<li class="ta-selected">
+																<a href="#" class="ta-mlv3-item"><span class="ta-mlv3-txt">기본&middot;공통 대화</span></a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="ta-active">
+									<a href="#" class="ta-mlv3-item"><span class="ta-mlv3-txt">FAQ대화</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ta-etc-area">
+						<div class="ta-etc-list">
+							<ul>
+								<li>
+									<button type="button" class="ta-btn ta-btn-s ta-btn-lineblue ta-etc-apply">운영 챗봇으로 적용</button>
+									<span class="ta-etc-txt" style="display: none;">보기만 가능</span><!-- S : (운영환경) 해당영역 필요 시 display none, block으로 제어 -->
+								</li>
+								<li>
+									<div class="ta-dd-botversion">
+										<button type="button" class="ta-btn ta-btn-botversion"><span class="ta-bv-dev">Development</span></button>
+										<button type="button" class="ta-btn ta-btn-botversion" style="display: none;"><span class="ta-prd">Production</span></button><!-- S : (운영환경) 해당영역 필요 시 display none, block으로 제어 -->
+										<div class="ta-layer-dropdown ta-ld-botversion"><!-- 활성화 className = ta-active -->
+											<div class="ta-ld-box">
+												<div class="ta-cont-botversion">
+													<div class="ta-bv-title">
+														<span class="ta-ltt-txt">봇 버전 및 환경</span>
+													</div>
+													<div class="ta-bv-conts-area">
+														<div class="ta-bv-list">
+															<ul>
+																<li>
+																	<div class="ta-bvl-title">
+																		<span>개발모드</span><span class="ta-state-blt ta-blt-blue"></span>
+																	</div>
+																	<div class="ta-bv-detail-list">
+																		<ol class="ta-optlist">
+																			<li class="ta-selected"><!-- 활성화 className = ta-selected -->
+																				<span class="ta-bvdl-txt">Development 0.8.1</span>
+																				<span class="ta-bvdl-update">Updated : 2020-08-18 20:04</span>
+																			</li>
+																			<li>
+																				<span class="ta-bvdl-txt">Development 0.8.1</span>
+																				<span class="ta-bvdl-update">Updated : 2020-08-18 20:04</span>
+																			</li>
+																		</ol>
+																	</div>
+																</li>
+																<li>
+																	<div class="ta-bvl-title">
+																		<span>운영모드</span><span class="ta-state-blt ta-blt-orange"></span>
+																	</div>
+																	<div class="ta-bv-detail-list">
+																		<ol class="ta-optlist">
+																			<li>
+																				<span class="ta-bvdl-txt">Production 1.1.3</span>
+																				<span class="ta-bvdl-update">Updated : 2020-08-18 20:04</span>
+																			</li>
+																			<li>
+																				<span class="ta-bvdl-txt">Production 1.1.3</span>
+																				<span class="ta-bvdl-update">Updated : 2020-08-18 20:04</span>
+																			</li>
+																		</ol>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				<!-- E : 수정이력 : * 	2020-10-14			EiLAB		마크업변경(레이어드롭다운마이봇목록, 타이틀영역추가) -->
+
+				<!-- S : 수정이력 : * 	2020-10-16			EiLAB		마크업변경(컨텐츠영역 추가) -->
+				<div class="ta-page-cont">
+					<!-- S : 여기서부터 컨텐츠 -->
+
+					시작<br><br><br><br><br>
+					scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>
+					scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>scroll<br><br><br><br><br>
+					끝
+
+
+
+					<!-- E : 여기서부터 컨텐츠 -->
+				</div>
+				<!-- E : 수정이력 : * 	2020-10-16			EiLAB		마크업변경(컨텐츠영역 추가) -->
+
+			</div>
+		</div>
+		<!-- E : 컨텐츠영역 -->
+
+	</div>
+	<!-- E : 컨테이너영역 -->
+
+</div>
+<!-- E : layout -->
+
+
+
+</body>
+</html>

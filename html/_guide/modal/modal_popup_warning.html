@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : [팝업] 확인
+* @ 파일명 : html/_guide/modal/layer_confirm.html
+* @ 수정이력
+* **********************************************************************************************************************
+*	날짜				작업자		요청자/상세내용
+* **********************************************************************************************************************
+* 	2020-10-12			EiLABsjs		최초작성
+* 	2020-10-14			EiLABsjs		마크업변경(버튼수정)
+* 	2020-10-23			EiLAB		마크업변경(이미지변환 img TAG -> 폰트어썸HTML, svg)
+* **********************************************************************************************************************
+-->
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>[팝업] 확인</title>
+
+	<!-- Library -->
+	<script type="text/javascript" src="../../../resource/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../../../resource/js/jquery-ui-1.11.4.min.js"></script>	
+
+	<!-- UI -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../../resource/css/ui_style.css" />
+	<script type="text/javascript" src="../../../resource/js/ui_plugin.js"></script>
+	<script type="text/javascript" src="../../../resource/js/ui_script.js"></script>
+</head>
+
+<body>
+
+
+
+	<!-- S : 모달팝업 -->
+	<div class="ta-modal-popup ta-mp-confirm ta-active"><!-- 활성화 className = ta-active -->
+		<div class="ta-mp-layout">
+			<!-- S : 헤더 -->
+			<div class="ta-mp-header-area">
+				<div class="ta-mph-title">확인팝업타이틀</div>
+				<button type="button" class="ta-btn ta-btn-mp-close" title="">팝업닫기</button>
+			</div>
+			<!-- E : 헤더 -->
+
+			<!-- S : 컨테이너 -->
+			<div class="ta-mp-container-area">
+				<div class="ta-contents">
+					<!-- S : 여기서부터 컨텐츠 -->
+
+
+
+					<div class="ta-mp-msg-area">
+						<!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+						<div class="ta-mpm-icon-area">
+							<span class="ta-icon"><img src="../../../resource/image/component/icon/icon-warning.svg" alt="" /></span>
+						</div>
+						<!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+						<div class="ta-mpm-txt-area">
+							<div class="ta-mpm-desc">
+								<p class="ta-msg-warn"><b>경고문구 경고문구 경고문구</b></p>
+								<p>일반문구 일반문구 일반문구 일반문구</p>
+							</div>
+						</div>
+					</div>
+
+					
+
+					<!-- S : 여기까지 컨텐츠 -->
+				</div>
+
+				<!-- S : 하단고정영역 -->
+				<div class="ta-bottom-area">
+					<div class="ta-btn-area">
+						<!-- S : 수정이력 : * 	2020-10-14			EiLABsjs		마크업변경(버튼수정) -->
+						<div class="ta-grp-main">
+							<button type="button" class="ta-btn ta-btn-m ta-btn-bggray">취소</button>
+							<button type="button" class="ta-btn ta-btn-m ta-btn-bgblue">삭제</button>
+						</div>
+						<!-- E : 수정이력 : * 	2020-10-14			EiLABsjs		마크업변경(버튼수정) -->
+					</div>
+				</div>
+				<!-- E : 하단고정영역 -->
+			</div>
+			<!-- E : 컨테이너 -->
+			
+		</div>
+	</div>
+	<!-- E : 모달팝업 -->
+
+
+
+</body>
+</html>

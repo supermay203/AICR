@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : Table Guide
+* @ 파일명 : html/_guide/guide/guide_table.html
+* @ 수정이력
+* **********************************************************************************************************************
+*	날짜				작업자		요청자/상세내용
+* **********************************************************************************************************************
+* 	2020-10-12			EiLABsjs		최초작성
+* **********************************************************************************************************************
+-->
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>Table guide</title>
+
+	<!-- Library -->
+	<script type="text/javascript" src="../../../resource/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../../../resource/js/jquery-ui-1.11.4.min.js"></script>
+
+	<!-- UI -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../../resource/css/ui_style.css" />
+	<script type="text/javascript" src="../../../resource/js/ui_plugin.js"></script>
+	<script type="text/javascript" src="../../../resource/js/ui_script.js"></script>
+
+	<!-- zEilab guide(가이드에만 선언) -->
+	<link rel="stylesheet" type="text/css" href="../../../z_eilab/guide.css" />
+	<script type="text/javascript" src="../../../z_eilab/guide.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- S : layout -->
+<div id="layout">
+
+<h1 class="example_title">&lt; Table Guide &gt;</h1>
+
+
+<!-- <div class="example_box">
+	<div class="ex_title">대분류</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">소분류</span><span class="class_name">셀렉터명</span><button type="button" class="source">소스보기</button></div>
+		<div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div>
+		<div class="source_code">
+소스코드
+		</div>
+	</div>
+</div> -->
+
+
+<div class="example_box">
+	<div class="ex_title">보기(TBD)</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">기본</span><span class="class_name">.ta-table.ta-tbl-view table</span><button type="button" class="source">소스보기</button></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_code">
+
+<div class="ta-table ta-tbl-view">
+	<table>
+		<caption>테이블</caption>
+		<colgroup>
+			<col style="width: 20%" />
+			<col style="width: 20%" />
+			<col style="width: 20%" />
+			<col style="width: 20%" />
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">제목</th>
+				<td>내용</td>
+				<th scope="row">제목</th>
+				<td>내용</td>
+			</tr>
+			<tr>
+				<th scope="row">제목</th>
+				<td>내용</td>
+				<th scope="row">제목</th>
+				<td>내용</td>
+			</tr>
+			<tr>
+				<th scope="row">제목</th>
+				<td>내용</td>
+				<th scope="row">제목</th>
+				<td>내용</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">기본</span><span class="class_name">.ta-table.ta-tbl-view table</span><button type="button" class="source">소스보기</button></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_code">
+
+<div class="ta-table ta-tbl-view">
+	<table>
+		<caption>테이블</caption>
+		<colgroup>
+			<col style="width: 20%" />
+			<col style="width: 20%" />
+			<col style="width: 20%" />
+			<col style="width: 20%" />
+			<col style="width: 20%" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col" rowspan="2">제목</th>
+				<th scope="col" colspan="2">제목</th>
+				<th scope="col" colspan="2">제목</th>
+			</tr>
+			<tr>
+				<th scope="col">제목</th>
+				<th scope="col">제목</th>
+				<th scope="col">제목</th>
+				<th scope="col">제목</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+			</tr>
+			<tr>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+			</tr>
+			<tr>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">기본</span><span class="class_name">.ta-table.ta-tbl-view table</span><button type="button" class="source">소스보기</button></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_code">
+
+<div class="ta-table ta-tbl-view">
+	<table>
+		<caption>테이블</caption>
+		<colgroup>
+			<col style="width: 25%" />
+			<col style="width: 25%" />
+			<col style="width: 25%" />
+			<col style="width: 25%" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">제목</th>
+				<th scope="col">제목</th>
+				<th scope="col">제목</th>
+				<th scope="col">제목</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">제목</th>
+				<td>내용</td>
+				<th scope="row">제목</th>
+				<td>내용</td>
+			</tr>
+			<tr>
+				<th scope="row">제목</th>
+				<td>내용</td>
+				<th scope="row">제목</th>
+				<td>내용</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+		</div>
+	</div>
+
+</div>
+
+
+<div class="example_box">
+	<div class="ex_title">쓰기</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">기본</span><span class="class_name">.ta-table.ta-tbl-write table</span><button type="button" class="source">소스보기</button></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_code">
+
+<div class="ta-table ta-tbl-write">
+	<table>
+		<caption>테이블</caption>
+		<colgroup>
+			<col style="width: 50%;" />
+			<col style="width: 50%;" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">제목</th>
+				<th scope="col">제목</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>내용</td>
+				<td>내용</td>
+			</tr>
+			<tr>
+				<td>내용</td>
+				<td>내용</td>
+			</tr>
+			
+		</tbody>
+	</table>
+</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="example_box">
+	<div class="ex_title">목록</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">목록</span><span class="class_name">.ta-table.ta-tbl-list table</span><button type="button" class="source">소스보기</button></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_code">
+
+<div class="ta-table ta-tbl-list">
+	<table>
+		<caption>테이블</caption>
+		<colgroup>
+			<col style="width: 25%" />
+			<col style="width: 25%" />
+			<col style="width: 25%" />
+			<col style="width: 25%" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">제목</th>
+				<th scope="col">제목</th>
+				<th scope="col">제목</th>
+				<th scope="col">제목</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+			</tr>
+			<tr>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+			</tr>
+			<tr>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+			</tr>
+			<tr>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="example_box">
+	<div class="ex_title">테이블 option</div>
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">문구 정렬</span><span class="class_name"></span><button type="button" class="source">소스보기</button></div>
+		<div class="etc_info_wrap">
+			<p>
+				.ta-txt-l : 좌측정렬<br>
+				.ta-txt-r : 우측정렬<br>
+				.ta-txt-c : 중앙정렬<br><br>
+			</p>
+			<p>
+				ex> table부모 or td,th에 직접선언<br>
+				&lt;div class="ta-table ta-tbl-write ta-txt-c"&gt; or &lt;td class="ta-txt-l"&gt;
+			</p>
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">스크롤</span><span class="class_name">.ta-table.ta-opt-scry .ta-tbl-head .ta-tbl-inner table<br>.ta-table.ta-opt-scry .ta-tbl-body .ta-tbl-inner table</span><button type="button" class="source">소스보기</button></div>
+		<div class="etc_info_wrap">
+			※스크롤영역 guide※<br><br>
+			ex> 직접입력(기본 높이 460px) <br>
+			&lt;div class="ta-tb-inner" style="max-height: 460px"&gt;
+		</div>
+		<div class="source_code">
+
+<div class="ta-table ta-tbl-list ta-opt-scry ta-opt-hover">
+	<div class="ta-tbl-head">
+		<div class="ta-tbl-inner">
+			<table>
+				<caption>테이블</caption>
+				<colgroup>
+					<col style="width:25%;" />
+					<col style="width:25%;" />
+					<col style="width:25%;" />
+					<col style="width:25%;" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">제목</th>
+						<th scope="col">제목</th>
+						<th scope="col">제목</th>
+						<th scope="col">제목</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+	</div>
+	<div class="ta-tbl-body">
+		<div class="ta-tbl-inner"><!-- 최대 height 직접입력 : style="max-height: ***px" -->
+			<table>
+				<caption>테이블</caption>
+				<colgroup>
+					<col style="width:25%;" />
+					<col style="width:25%;" />
+					<col style="width:25%;" />
+					<col style="width:25%;" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<td>내용</td>
+						<td>내용</td>
+						<td>내용</td>
+						<td>내용</td>
+					</tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+					<tr><td>내용</td><td>내용</td><td>내용</td><td>내용</td></tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+		</div>
+	</div>
+
+	<div class="ex_type">
+		<div class="ex_info_wrap"><span class="name">hover</span><span class="class_name">.ta-table.ta-opt-hover</span><button type="button" class="source">소스보기</button></div>
+		<!-- <div class="etc_info_wrap">기타설명(필요할 경우)<br>기타설명(필요할 경우)</div> -->
+		<div class="source_code">
+
+<div class="ta-table ta-tbl-list ta-opt-hover">
+	<table>
+		<caption>테이블</caption>
+		<colgroup>
+			<col style="width: 23%;" />
+			<col style="width: 23%;" />
+			<col style="width: 23%;" />
+			<col style="width: 23%;" />
+			<col style="width: 8%;" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">제목</th>
+				<th scope="col">제목</th>
+				<th scope="col">제목</th>
+				<th scope="col">제목</th>
+				<th scope="col"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td class="ta-txt-c">
+					<div class="ta-hidden-td">숨김영역</div>
+				</td>
+			</tr>
+			<tr>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td class="ta-txt-c">
+					<div class="ta-hidden-td">숨김영역</div>
+				</td>
+			</tr>
+			<tr>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td class="ta-txt-c">
+					<div class="ta-hidden-td">숨김영역</div>
+				</td>
+			</tr>
+			<tr>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+				<td class="ta-txt-c">
+					<div class="ta-hidden-td">숨김영역</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+		</div>
+	</div>
+
+</div>
+
+
+
+</div>
+<!-- E : layout -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : 사용자관리
+* @ 파일명 : html/bot_designer/usermanagement/usermanage_main.html
+* @ 수정이력
+* **********************************************************************************************************************
+*	날짜				작업자		내용
+* **********************************************************************************************************************
+* 	2020-10-16			EiLABsjs		최초작성
+* 	2020-10-21			EiLABsjs		마크업변경(상단영역 버튼순서변경, 테이블 항목 권한편집 버튼 추가)
+* 	2020-10-23			EiLAB		마크업변경(이미지변환 img TAG -> 폰트어썸HTML, svg)
+* **********************************************************************************************************************
+-->
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <title>작업배분</title>
+
+    <!-- Library -->
+    <script type="text/javascript" src="../../../resource/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../resource/js/jquery-ui-1.11.4.min.js"></script>
+
+    <!-- UI -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../../resource/css/ui_style.css"/>
+    <script type="text/javascript" src="../../../resource/js/ui_plugin.js"></script>
+    <script type="text/javascript" src="../../../resource/js/ui_script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</head>
+
+<body>
+
+
+<!-- S : layout -->
+<div class="ta-layout">
+
+    <!-- S : 탑메뉴바영역 -->
+    <div class="ta-topmenu-area">
+        <div class="ta-tm-inner">
+            <div class="ta-homemenu-area"><img src="../../../resource/image/layout_temp/title_logo.png" alt=""
+                                               style="width:145px;"/>&nbsp;&nbsp;&nbsp;<h2><B>AICR</B></h2></div>
+            <div class="ta-mainmenu-area">
+                <!--<img src="../../../resource/image/layout_temp/topbar-center.png" alt="" />--></div>
+            <div class="ta-idpdmenu-area">
+                <!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+                <div class="ta-idpd-item ta-idpd-setting"><!-- setting -->
+                    <button type="button" class="ta-btn ta-btn-set" id="btnJoin"><span class="ta-icon"><img src="../../../resource/image/layout/icon-idpdmenu-setting.svg" alt="" /></span></button>
+                </div>
+                <div class="ta-idpd-item ta-idpd-noti"><!-- notification -->
+                    <button type="button" class="ta-btn ta-btn-noti" id="btnSign">
+                        <span class="ta-icon"><img src="../../../resource/image/layout/icon-idpdmenu-notifications.svg" alt="" /></span>
+                        <span class="ta-noti-bullet"></span>
+                    </button>
+                </div>
+                <!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+                <div class="ta-idpd-item ta-idpd-username"><!-- username -->
+                    <!-- S : 레이이드롭다운 - my account(독립메뉴영역) -->
+
+                    <div class="ta-dd-username">
+                        <div class="ta-ma-select"><!-- 활성화 className = ta-focus -->
+                            <span class="ta-ma-name">USER NAME</span>
+                            <button type="button" class="ta-btn ta-tm-arrow"></button>
+                        </div>
+
+                    </div>
+                    <!-- S : 레이이드롭다운 - my account(독립메뉴영역) -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : 탑메뉴바영역 -->
+
+    <!-- S : 컨테이너영역 -->
+    <div class="ta-container-area">
+
+        <!-- S : 테스트봇영역 -->
+        <div class="ta-testbot-area"><!-- 봇영역열기 className = ta-bt-open -->
+            <div class="ta-testbot">
+                테스트봇영역
+            </div>
+        </div>
+        <!-- E : 테스트봇영역 -->
+
+
+        <!-- S : 컨텐츠영역 -->
+        <div class="ta-contents-area">
+
+            <!-- S : 사이드메뉴바영역 -->
+            <div class="ta-sidemenu-area"><!-- 사이드메뉴접기 className = ta-smfold -->
+                <!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+                <div class="ta-sm-contain">
+                    <div class="ta-sm-header">
+                        <a href="../../../html/bot_designer/home/home.html" class="ta-mlv2-item">
+                            <button type="button" class="ta-btn ta-btn-sm-ctrl">
+
+                                    <span class="ta-icon-normal">
+                                        <i class="fas fa-home"></i>
+                                    </span>
+
+                            </button>
+                            <div class="ta-mlv1-txt">HOME</div>
+                        </a>
+                        <div class="ta-sm-line"></div>
+                    </div>
+                    <div class="ta-sidemenu">
+                        <div class="ta-menu-lv2">
+                            <ul>
+                                <li class="">
+                                    <a href="../../../html/bot_designer/usermanagement/usermanage_main.html" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+												<i class="fas fa-user"></i>
+											</span>
+										</span>
+                                        <span class="ta-mlv2-txt">사용자관리</span>
+                                    </a>
+                                </li>
+                                <!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(lnb 대시보드 메뉴추가) -->
+                                <li class=""><!-- 현재페이지 className = 'ta-now' -->
+                                    <a href="../../../html/bot_designer/group/group_main.html" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+                                                <i class="fas fa-shapes"></i>
+											</span>
+										</span>
+                                        <span class="ta-mlv2-txt">작업그룹관리</span>
+                                    </a>
+                                </li>
+                                <!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(lnb 대시보드 메뉴추가) -->
+                                <li class=""><!-- 현재페이지 className = 'ta-now' -->
+                                    <a href="../../../html/bot_designer/group/taskAlloc_main.html" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+												<i class="fas fa-project-diagram"></i>
+											</span>
+										</span>
+                                        <span class="ta-mlv2-txt">작업배분</span>
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="#" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+												<i class="fas fa-chart-line"></i>
+											</span>
+										</span>
+                                        <span class="ta-mlv2-txt">작업현황관리</span>
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="#" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+                                                <i class="fas fa-chart-bar"></i>
+											</span>
+										</span>
+                                        <span class="ta-mlv2-txt">배분현황관리</span>
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="#" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+                                                <i class="fas fa-dolly-flatbed"></i>
+											</span>
+										</span>
+                                        <span class="ta-mlv2-txt">작업마감관리</span>
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="#" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+                                                <i class="far fa-calendar-check"></i>
+											</span>
+										</span>
+                                        <span class="ta-mlv2-txt">일정관리</span>
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a href="#" class="ta-mlv2-item">
+										<span class="ta-icon">
+											<span class="ta-icon-normal">
+                                                <i class="fas fa-cog"></i>
+											</span>
+										</span>
+                                        <span class="ta-mlv2-txt">환경설정</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+            </div>
+            <!-- E : 사이드메뉴바영역 -->
+
+            <div class="ta-contents">
+
+                dash board
+
+            </div>
+        </div>
+        <!-- E : 컨텐츠영역 -->
+
+    </div>
+    <!-- E : 컨테이너영역 -->
+
+
+</div>
+<!-- E : layout -->
+
+</body>
+</html>
+
+
+<script>
+
+    $("[id='btnJoin']").click(function(event) {
+        location.href ='../../../html/bot_designer/usermanagement/join_main.html';
+    });
+
+    $("[id='btnSign']").click(function(event) {
+        location.href ='../../../html/authorize/signin/signin_main.html';
+    });
+
+</script>

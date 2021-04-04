@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+* @ Copyright (c) EiLAB
+* @ 화면명 : [레이어] 기본템플릿
+* @ 파일명 : html/_guide/layer/layer_popup.html
+* @ 수정이력
+* **********************************************************************************************************************
+*	날짜				작업자		요청자/상세내용
+* **********************************************************************************************************************
+* 	2020-10-12			EiLABsjs		최초작성
+* **********************************************************************************************************************
+-->
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>[레이어] 기본템플릿</title>
+
+	<!-- Library -->
+	<script type="text/javascript" src="../../../resource/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../../../resource/js/jquery-ui-1.11.4.min.js"></script>	
+
+	<!-- UI -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../../resource/css/ui_style.css" />
+	<script type="text/javascript" src="../../../resource/js/ui_plugin.js"></script>
+	<script type="text/javascript" src="../../../resource/js/ui_script.js"></script>
+</head>
+
+<body>
+
+<!-- S : 레이어팝업 -->
+<div style="padding-top:50px;padding-left:600px; width: 100%; height: 100%;"><!-- 활성화 className = ta-active -->
+	<div>
+			<!-- S : 여기서부터 컨텐츠 -->
+			<div style="padding-left: 185px;">
+				<img src="../../../resource/image/layout/icon-qt-logo.png" alt=""style="width:200px;"/>
+			</div>
+
+			<br>
+			<!-- S : 레이어팝업 -->
+			<div class="ta-layer-popup ta-active" style="width: 600px; height: 700px;"><!-- 활성화 className = ta-active -->
+				<div class="ta-lp-contents-center">
+					<!-- S : 여기서부터 컨텐츠 -->
+					<div style="padding-top: 100px"></div>
+					<div>
+						<h1>
+							QuantumAI AICR 서비스
+						</h1>
+						<h1>
+							회원가입을 환영합니다.
+						</h1>
+					</div>
+
+					<div style="padding-top: 20px"></div>
+					<div>
+						<h3>
+							Annotator 자격심사 결과를 이메일로 알려드립니다.
+						</h3>
+						<h3>
+							심사통과 이후 정상적인 서비스 접속이 가능합니다.
+						</h3>
+
+					</div>
+
+					<div style="padding-top: 200px"></div>
+					<!-- S : 하단고정영역 -->
+					<div class="ta-bottom-area">
+						<div class="ta-btn-area">
+							<div class="ta-grp-main">
+								<button type="button" class="ta-btn ta-btn-m ta-btn-bgblue" id="btnJoin" style="width: 400px;">돌아가기</button>
+							</div>
+						</div>
+					</div>
+					<!-- E : 하단고정영역 -->
+
+					<!-- E : 여기서부터 컨텐츠 -->
+				</div>
+			</div>
+			<!-- E : 레이어팝업 -->
+
+		<!-- E : 여기서부터 컨텐츠 -->
+	</div>
+</div>
+<!-- E : 레이어팝업 -->
+
+</body>
+</html>
+
+
+
+<script>
+
+	$("[id='btnJoin']").click(function(event) {
+		location.href ='../../../html/bot_designer/usermanagement/usermanage_main.html';
+	});
+
+</script>

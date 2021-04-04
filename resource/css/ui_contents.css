@@ -94,13 +94,14 @@
    봇디자이너 - FAQ
 *********************************************************************************************************/
 .ta-page-subhead { padding-top: 30px; box-sizing: border-box; }
+.ta-page-subhead .br { height: 10px;}
 .ta-page-tab { width: 100%; padding-top: 15px; _background: #ffffff; border-bottom: 1px solid #dfe1e4; }
 
 
 /* 검색영역 */
-.ta-search-section {  }
+.ta-search-section { }
 .ta-search-section:after { content: ''; display: block; clear: both; }
-.ta-search-section .ta-inquiry-area { float: left; }
+.ta-search-section .ta-inquiry-area { float: left; width: 100%;  }
 .ta-search-section .ta-btn-area { float: right; }
 .ta-search-section .ta-btn-area > * { margin-left: 6px; }
 .ta-search-section .ta-btn-area > *:first-child { margin-left: 0; }

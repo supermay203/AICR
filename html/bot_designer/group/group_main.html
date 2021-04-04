@@ -17,7 +17,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-    <title>사용자관리</title>
+    <title>작업그룹관리</title>
 
     <!-- Library -->
     <script type="text/javascript" src="../../../resource/js/jquery-1.12.4.min.js"></script>
@@ -51,12 +51,6 @@
                                                style="width:145px;"/>&nbsp;&nbsp;&nbsp;<h2><B>AICR</B></h2></div>
             <div class="ta-mainmenu-area">
                 <!--<img src="../../../resource/image/layout_temp/topbar-center.png" alt="" />--></div>
-
-            <!--
-            <div class="ta-idpdmenu-area">
-                <img src="../../../resource/image/layout_temp/topbar-right.png" alt=""/>
-            </div>
--->
             <div class="ta-idpdmenu-area">
                 <!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
                 <div class="ta-idpd-item ta-idpd-setting"><!-- setting -->
@@ -82,7 +76,6 @@
                     <!-- S : 레이이드롭다운 - my account(독립메뉴영역) -->
                 </div>
             </div>
-
         </div>
     </div>
     <!-- E : 탑메뉴바영역 -->
@@ -229,10 +222,10 @@
                                     <a href="#" class="ta-mlv2-item">
 										<span class="ta-icon">
 											<span class="ta-icon-normal">
-												<i class="fas fa-user"></i>
+												<i class="fas fa-shapes"></i>
 											</span>
 										</span>
-                                        <span class="ta-mlv2-txt">사용자관리</span>
+                                        <span class="ta-mlv2-txt">작업그룹관리</span>
                                     </a>
                                 </li>
                             </ul>
@@ -255,10 +248,8 @@
                                         <table>
                                             <caption>테이블</caption>
                                             <colgroup>
-                                                <col style="width: 10%">
-                                                <col style="width: 40%">
-                                                <col style="width: 10%">
-                                                <col style="width: 40%">
+                                                <col style="width: 150px">
+                                                <col>
                                             </colgroup>
                                             <tbody>
                                             <tr>
@@ -278,81 +269,29 @@
                                                         <input type="text" placeholder="검색" title="" value="">
                                                         <button type="button" class="ta-btn ta-input-clear">문구삭제</button>
                                                     </div>
-                                                </td>
-                                                <th scope="row">작업그룹</th>
-                                                <td>
-                                                    <div class="ta-select">
-                                                        <select name="" id="" title="작업그룹선택">
-                                                            <option value="">선택</option>
-                                                            <option value="">option1</option>
-                                                            <option value="">option2</option>
-                                                            <option value="">option3</option>
-                                                            <option value="" disabled="">disabled</option>
-                                                        </select>
-                                                    </div>
+
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <th scope="row">회원구분</th>
-                                                <td>
-                                                    <div class="ta-checkbox">
-                                                        <input type="checkbox" id="chk1_1" value="">
-                                                        <label for="chk1_1"><span class="ta-label">Annotator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
-                                                    </div>
 
-                                                    <div class="ta-checkbox">
-                                                        <input type="checkbox" id="chk1_2" value="">
-                                                        <label for="chk1_2"><span class="ta-label">Anno. Mng&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
-                                                    </div>
-
-                                                    <div class="ta-checkbox">
-                                                        <input type="checkbox" id="chk1_3" value="">
-                                                        <label for="chk1_3"><span class="ta-label">Linguister&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
-                                                    </div>
-
-                                                    <div class="ta-checkbox">
-                                                        <input type="checkbox" id="chk1_4" value="">
-                                                        <label for="chk1_4"><span class="ta-label">Admin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
-                                                    </div>
-
-
-                                                </td>
-                                                <th scope="row">승인여부</th>
-                                                <td>
-                                                    <div class="ta-radio">
-                                                        <input type="radio" id="rad1_1" name="rad1" value="" checked="checked">
-                                                        <label for="rad1_1"><span class="ta-label">전체&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
-                                                    </div>
-                                                    <div class="ta-radio">
-                                                        <input type="radio" id="rad1_2" name="rad1" value="" >
-                                                        <label for="rad1_2"><span class="ta-label">승인&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
-                                                    </div>
-                                                    <div class="ta-radio">
-                                                        <input type="radio" id="rad1_3" name="rad1" value="" >
-                                                        <label for="rad1_3"><span class="ta-label">미승인&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></label>
-                                                    </div>
-                                                </td>
-                                            </tr>
                                             </tbody>
                                         </table>
                                     </div>
 
+                                    <div class="br"></div>
+
+                                    <div class="ta-search-section" align="center">
+                                        <button type="button" class="ta-btn ta-btn-m ta-btn-bgblue">검색</button>
+                                    </div>
                                 </div>
 
                             </div>
                             <!-- E : 여기까지 검색영역 -->
-
-                            <div class="br"></div>
-
-                            <div class="ta-search-section" align="center">
-                                <button type="button" class="ta-btn ta-btn-m ta-btn-bgblue">검색</button>
-                            </div>
                         </div>
 
                         <div class="br"></div>
 
                         <div class="ta-search-section" align="right">
-                            <button type="button" class="ta-btn ta-btn-m ta-btn-lineblue" id="btnNewUser">신규 사용자 생성</button>
+                            <button type="button" class="ta-btn ta-btn-m ta-btn-lineblue" id="btnNewGroup">신규 그룹 생성</button>
                         </div>
                         <div class="br"></div>
 
@@ -381,9 +320,6 @@
                                                                 <col style="width:9%;">
                                                                 <col style="width:9%;">
                                                                 <col style="width:9%;">
-                                                                <col style="width:9%;">
-                                                                <col style="width:9%;">
-                                                                <col style="width:9%;">
                                                             </colgroup>
                                                             <thead>
                                                             <tr>
@@ -399,50 +335,29 @@
                                                                             class="ta-btn ta-btn-sort"></button>
                                                                 </th>
                                                                 <th scope="col" class="ta-txt-c">
-                                                                    <span class="ta-sort-title">상태</span>
+                                                                    <span class="ta-sort-title">작업그룹명</span>
                                                                     <button type="button"
                                                                             class="ta-btn ta-btn-sort"></button>
                                                                 </th>
                                                                 <th scope="col" class="ta-txt-c">
-                                                                    <span class="ta-sort-title">아이디</span>
+                                                                    <span class="ta-sort-title">등록 작업자 수</span>
                                                                     <button type="button"
                                                                             class="ta-btn ta-btn-sort"></button>
                                                                 </th>
                                                                 <th scope="col" class="ta-txt-c">
-                                                                    <span class="ta-sort-title">이름</span>
+                                                                    <span class="ta-sort-title">Annotation Manager</span>
                                                                     <button type="button"
                                                                             class="ta-btn ta-btn-sort"></button>
                                                                 </th>
                                                                 <th scope="col" class="ta-txt-c">
-                                                                    <span class="ta-sort-title">이메일</span>
+                                                                    <span class="ta-sort-title">Linguister</span>
                                                                     <button type="button"
                                                                             class="ta-btn ta-btn-sort"></button>
                                                                 </th>
                                                                 <th scope="col" class="ta-txt-c">
-                                                                    <span class="ta-sort-title">전화번호</span>
+                                                                    <span class="ta-sort-title">최근수정일</span>
                                                                     <button type="button"
                                                                             class="ta-btn ta-btn-sort"></button>
-                                                                </th>
-                                                                <th scope="col" class="ta-txt-c">
-                                                                    <span class="ta-sort-title">가입일</span>
-                                                                    <button type="button"
-                                                                            class="ta-btn ta-btn-sort"></button>
-                                                                </th>
-                                                                <th scope="col" class="ta-txt-c">
-                                                                    <span class="ta-sort-title">최근접속일</span>
-                                                                    <button type="button"
-                                                                            class="ta-btn ta-btn-sort"></button>
-                                                                </th>
-                                                                <th scope="col" class="ta-txt-c">
-                                                                    <span class="ta-sort-title">권한</span>
-                                                                    <div class="ta-btnselect">
-                                                                        <select name="" id="">
-                                                                            <option value="">Annotator</option>
-                                                                            <option value="">Anno. Mng</option>
-                                                                            <option value="">Linguister</option>
-                                                                            <option value="">Admin</option>
-                                                                        </select>
-                                                                    </div>
                                                                 </th>
                                                                 <th scope="col" class="ta-txt-c">설정</th>
                                                             </tr>
@@ -465,9 +380,6 @@
                                                                 <col style="width:9%;">
                                                                 <col style="width:9%;">
                                                                 <col style="width:9%;">
-                                                                <col style="width:9%;">
-                                                                <col style="width:9%;">
-                                                                <col style="width:9%;">
                                                             </colgroup>
                                                             <tbody>
                                                             <tr class="ta-selected">
@@ -479,26 +391,19 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="ta-txt-c">1</td>
-                                                                <td class="ta-txt-c">
-                                                                    <div class="ta-status ta-sts-user ta-type-s">Not
-                                                                        Approved
-                                                                    </div>
-                                                                </td>
-                                                                <td class="ta-txt-c">hongk1</td>
-                                                                <td class="ta-txt-c">홍길동</td>
-                                                                <td class="ta-txt-c">ABC@google.com</td>
-                                                                <td class="ta-txt-c">010-1111-2222</td>
+                                                                <td class="ta-txt-c">Work_01</td>
+                                                                <td class="ta-txt-c">4명</td>
+                                                                <td class="ta-txt-c">명티금</td>
+                                                                <td class="ta-txt-c">김영희</td>
                                                                 <td class="ta-txt-c">2010.10.11</td>
-                                                                <td class="ta-txt-c">2020-06-28 23:29</td>
-                                                                <td class="ta-txt-c">Annotator</td>
                                                                 <td class="ta-txt-c">
                                                                     <div class="ta-hidden-td">
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-roleedit">
 
-                                                                            <a class="info title" href="#divEditUser">
+                                                                            <a class="info title" href="#divEditGroup">
                                                                                 <span class="ta-icon">
-																					<i class="fas fa-user-edit"></i>
+																					<i class="fas fa-edit"></i>
 																				</span>
                                                                             </a>
 
@@ -507,7 +412,7 @@
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-trash">
 
-                                                                            <a class="info title" href="#divDelUser">
+                                                                            <a class="info title" href="#divDelGroup">
                                                                                 <span class="ta-icon">
 																					<i class="fas fa-trash"></i>
 																				</span>
@@ -527,26 +432,19 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="ta-txt-c">2</td>
-                                                                <td class="ta-txt-c">
-                                                                    <div class="ta-status ta-sts-user ta-type-s">Not
-                                                                        Approved
-                                                                    </div>
-                                                                </td>
-                                                                <td class="ta-txt-c">gokildong</td>
-                                                                <td class="ta-txt-c">고길동</td>
-                                                                <td class="ta-txt-c">gokildong@google.com</td>
-                                                                <td class="ta-txt-c">010-1111-2223</td>
+                                                                <td class="ta-txt-c">Work_02</td>
+                                                                <td class="ta-txt-c">5명</td>
+                                                                <td class="ta-txt-c">명태옥</td>
+                                                                <td class="ta-txt-c">김철수</td>
                                                                 <td class="ta-txt-c">2010.10.11</td>
-                                                                <td class="ta-txt-c">2020-06-28 00:29</td>
-                                                                <td class="ta-txt-c">Annotator</td>
                                                                 <td class="ta-txt-c">
                                                                     <div class="ta-hidden-td">
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-roleedit">
 
-                                                                            <a class="info title" href="#divEditUser">
+                                                                            <a class="info title" href="#divEditGroup">
                                                                                 <span class="ta-icon">
-																					<i class="fas fa-user-edit"></i>
+																					<i class="fas fa-edit"></i>
 																				</span>
                                                                             </a>
 
@@ -555,7 +453,7 @@
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-trash">
 
-                                                                            <a class="info title" href="#divDelUser">
+                                                                            <a class="info title" href="#divDelGroup">
                                                                                 <span class="ta-icon">
 																					<i class="fas fa-trash"></i>
 																				</span>
@@ -575,26 +473,19 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="ta-txt-c">3</td>
-                                                                <td class="ta-txt-c">
-                                                                    <div class="ta-status ta-sts-user ta-type-r">
-                                                                        Approved
-                                                                    </div>
-                                                                </td>
-                                                                <td class="ta-txt-c">doolly</td>
-                                                                <td class="ta-txt-c">둘리</td>
-                                                                <td class="ta-txt-c">doolly@google.com</td>
-                                                                <td class="ta-txt-c">010-1111-2224</td>
+                                                                <td class="ta-txt-c">Work_03</td>
+                                                                <td class="ta-txt-c">6명</td>
+                                                                <td class="ta-txt-c">명티수</td>
+                                                                <td class="ta-txt-c">김철우</td>
                                                                 <td class="ta-txt-c">2010.10.11</td>
-                                                                <td class="ta-txt-c">2020-06-29 09:20</td>
-                                                                <td class="ta-txt-c">Anno. Mng</td>
                                                                 <td class="ta-txt-c">
                                                                     <div class="ta-hidden-td">
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-roleedit">
 
-                                                                            <a class="info title" href="#divEditUser">
+                                                                            <a class="info title" href="#divEditGroup">
                                                                                 <span class="ta-icon">
-																					<i class="fas fa-user-edit"></i>
+																					<i class="fas fa-edit"></i>
 																				</span>
                                                                             </a>
 
@@ -603,7 +494,7 @@
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-trash">
 
-                                                                            <a class="info title" href="#divDelUser">
+                                                                            <a class="info title" href="#divDelGroup">
                                                                                 <span class="ta-icon">
 																					<i class="fas fa-trash"></i>
 																				</span>
@@ -623,26 +514,19 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="ta-txt-c">4</td>
-                                                                <td class="ta-txt-c">
-                                                                    <div class="ta-status ta-sts-user ta-type-r">
-                                                                        Approved
-                                                                    </div>
-                                                                </td>
-                                                                <td class="ta-txt-c">micole</td>
-                                                                <td class="ta-txt-c">마이콜</td>
-                                                                <td class="ta-txt-c">micole@google.com</td>
-                                                                <td class="ta-txt-c">010-1111-2225</td>
+                                                                <td class="ta-txt-c">Work_04</td>
+                                                                <td class="ta-txt-c">5명</td>
+                                                                <td class="ta-txt-c">명태화</td>
+                                                                <td class="ta-txt-c">김철미</td>
                                                                 <td class="ta-txt-c">2010.10.11</td>
-                                                                <td class="ta-txt-c">2020-06-29 09:20</td>
-                                                                <td class="ta-txt-c">Annotator</td>
                                                                 <td class="ta-txt-c">
                                                                     <div class="ta-hidden-td">
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-roleedit">
 
-                                                                            <a class="info title" href="#divEditUser">
+                                                                            <a class="info title" href="#divEditGroup">
                                                                                 <span class="ta-icon">
-																					<i class="fas fa-user-edit"></i>
+																					<i class="fas fa-edit"></i>
 																				</span>
                                                                             </a>
 
@@ -651,7 +535,7 @@
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-trash">
 
-                                                                            <a class="info title" href="#divDelUser">
+                                                                            <a class="info title" href="#divDelGroup">
                                                                                 <span class="ta-icon">
 																					<i class="fas fa-trash"></i>
 																				</span>
@@ -671,26 +555,19 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="ta-txt-c">5</td>
-                                                                <td class="ta-txt-c">
-                                                                    <div class="ta-status ta-sts-user ta-type-r">
-                                                                        Approved
-                                                                    </div>
-                                                                </td>
-                                                                <td class="ta-txt-c">douner</td>
-                                                                <td class="ta-txt-c">도우너</td>
-                                                                <td class="ta-txt-c">douner@google.com</td>
-                                                                <td class="ta-txt-c">010-1111-2215</td>
+                                                                <td class="ta-txt-c">Work_05</td>
+                                                                <td class="ta-txt-c">5명</td>
+                                                                <td class="ta-txt-c">명태화</td>
+                                                                <td class="ta-txt-c">김철미</td>
                                                                 <td class="ta-txt-c">2010.10.11</td>
-                                                                <td class="ta-txt-c">2020-06-29 09:20</td>
-                                                                <td class="ta-txt-c">Linguister </td>
                                                                 <td class="ta-txt-c">
                                                                     <div class="ta-hidden-td">
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-roleedit">
 
-                                                                            <a class="info title" href="#divEditUser">
+                                                                            <a class="info title" href="#divEditGroup">
                                                                                 <span class="ta-icon">
-																					<i class="fas fa-user-edit"></i>
+																					<i class="fas fa-edit"></i>
 																				</span>
                                                                             </a>
 
@@ -699,7 +576,7 @@
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-trash">
 
-                                                                            <a class="info title" href="#divDelUser">
+                                                                            <a class="info title" href="#divDelGroup">
                                                                                 <span class="ta-icon">
 																					<i class="fas fa-trash"></i>
 																				</span>
@@ -719,26 +596,19 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="ta-txt-c">6</td>
-                                                                <td class="ta-txt-c">
-                                                                    <div class="ta-status ta-sts-user ta-type-s">Not
-                                                                        Approved
-                                                                    </div>
-                                                                </td>
-                                                                <td class="ta-txt-c">gokildong</td>
-                                                                <td class="ta-txt-c">고길동</td>
-                                                                <td class="ta-txt-c">gokildong@google.com</td>
-                                                                <td class="ta-txt-c">010-1111-2223</td>
+                                                                <td class="ta-txt-c">Work_06</td>
+                                                                <td class="ta-txt-c">5명</td>
+                                                                <td class="ta-txt-c">명태화</td>
+                                                                <td class="ta-txt-c">김철미</td>
                                                                 <td class="ta-txt-c">2010.10.11</td>
-                                                                <td class="ta-txt-c">2020-06-28 00:29</td>
-                                                                <td class="ta-txt-c">Annotator</td>
                                                                 <td class="ta-txt-c">
                                                                     <div class="ta-hidden-td">
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-roleedit">
 
-                                                                            <a class="info title" href="#divEditUser">
+                                                                            <a class="info title" href="#divEditGroup">
                                                                                 <span class="ta-icon">
-																					<i class="fas fa-user-edit"></i>
+																					<i class="fas fa-edit"></i>
 																				</span>
                                                                             </a>
 
@@ -747,7 +617,7 @@
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-trash">
 
-                                                                            <a class="info title" href="#divDelUser">
+                                                                            <a class="info title" href="#divDelGroup">
                                                                                 <span class="ta-icon">
 																					<i class="fas fa-trash"></i>
 																				</span>
@@ -767,26 +637,19 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="ta-txt-c">7</td>
-                                                                <td class="ta-txt-c">
-                                                                    <div class="ta-status ta-sts-user ta-type-r">
-                                                                        Approved
-                                                                    </div>
-                                                                </td>
-                                                                <td class="ta-txt-c">doolly</td>
-                                                                <td class="ta-txt-c">둘리</td>
-                                                                <td class="ta-txt-c">doolly@google.com</td>
-                                                                <td class="ta-txt-c">010-1111-2224</td>
+                                                                <td class="ta-txt-c">Work_07</td>
+                                                                <td class="ta-txt-c">5명</td>
+                                                                <td class="ta-txt-c">명태화</td>
+                                                                <td class="ta-txt-c">김철미</td>
                                                                 <td class="ta-txt-c">2010.10.11</td>
-                                                                <td class="ta-txt-c">2020-06-29 09:20</td>
-                                                                <td class="ta-txt-c">Anno. Mng</td>
                                                                 <td class="ta-txt-c">
                                                                     <div class="ta-hidden-td">
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-roleedit">
 
-                                                                            <a class="info title" href="#divEditUser">
+                                                                            <a class="info title" href="#divEditGroup">
                                                                                 <span class="ta-icon">
-																					<i class="fas fa-user-edit"></i>
+																					<i class="fas fa-edit"></i>
 																				</span>
                                                                             </a>
 
@@ -795,7 +658,7 @@
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-trash">
 
-                                                                            <a class="info title" href="#divDelUser">
+                                                                            <a class="info title" href="#divDelGroup">
                                                                                 <span class="ta-icon">
 																					<i class="fas fa-trash"></i>
 																				</span>
@@ -815,26 +678,19 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="ta-txt-c">8</td>
-                                                                <td class="ta-txt-c">
-                                                                    <div class="ta-status ta-sts-user ta-type-r">
-                                                                        Approved
-                                                                    </div>
-                                                                </td>
-                                                                <td class="ta-txt-c">micole</td>
-                                                                <td class="ta-txt-c">마이콜</td>
-                                                                <td class="ta-txt-c">micole@google.com</td>
-                                                                <td class="ta-txt-c">010-1111-2225</td>
+                                                                <td class="ta-txt-c">Work_08</td>
+                                                                <td class="ta-txt-c">5명</td>
+                                                                <td class="ta-txt-c">명태화</td>
+                                                                <td class="ta-txt-c">김철미</td>
                                                                 <td class="ta-txt-c">2010.10.11</td>
-                                                                <td class="ta-txt-c">2020-06-29 09:20</td>
-                                                                <td class="ta-txt-c">Admin</td>
                                                                 <td class="ta-txt-c">
                                                                     <div class="ta-hidden-td">
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-roleedit">
 
-                                                                            <a class="info title" href="#divEditUser">
+                                                                            <a class="info title" href="#divEditGroup">
                                                                                 <span class="ta-icon">
-																					<i class="fas fa-user-edit"></i>
+																					<i class="fas fa-edit"></i>
 																				</span>
                                                                             </a>
 
@@ -843,7 +699,7 @@
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-trash">
 
-                                                                            <a class="info title" href="#divDelUser">
+                                                                            <a class="info title" href="#divDelGroup">
                                                                                 <span class="ta-icon">
 																					<i class="fas fa-trash"></i>
 																				</span>
@@ -863,26 +719,19 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="ta-txt-c">9</td>
-                                                                <td class="ta-txt-c">
-                                                                    <div class="ta-status ta-sts-user ta-type-r">
-                                                                        Approved
-                                                                    </div>
-                                                                </td>
-                                                                <td class="ta-txt-c">douner</td>
-                                                                <td class="ta-txt-c">도우너</td>
-                                                                <td class="ta-txt-c">douner@google.com</td>
-                                                                <td class="ta-txt-c">010-1111-2215</td>
+                                                                <td class="ta-txt-c">Work_09</td>
+                                                                <td class="ta-txt-c">5명</td>
+                                                                <td class="ta-txt-c">명태화</td>
+                                                                <td class="ta-txt-c">김철미</td>
                                                                 <td class="ta-txt-c">2010.10.11</td>
-                                                                <td class="ta-txt-c">2020-06-29 09:20</td>
-                                                                <td class="ta-txt-c">Admin </td>
                                                                 <td class="ta-txt-c">
                                                                     <div class="ta-hidden-td">
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-roleedit">
 
-                                                                            <a class="info title" href="#divEditUser">
+                                                                            <a class="info title" href="#divEditGroup">
                                                                                 <span class="ta-icon">
-																					<i class="fas fa-user-edit"></i>
+																					<i class="fas fa-edit"></i>
 																				</span>
                                                                             </a>
 
@@ -891,7 +740,7 @@
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-trash">
 
-                                                                            <a class="info title" href="#divDelUser">
+                                                                            <a class="info title" href="#divDelGroup">
                                                                                 <span class="ta-icon">
 																					<i class="fas fa-trash"></i>
 																				</span>
@@ -911,26 +760,19 @@
                                                                     </div>
                                                                 </td>
                                                                 <td class="ta-txt-c">10</td>
-                                                                <td class="ta-txt-c">
-                                                                    <div class="ta-status ta-sts-user ta-type-s">Not
-                                                                        Approved
-                                                                    </div>
-                                                                </td>
-                                                                <td class="ta-txt-c">hongk1</td>
-                                                                <td class="ta-txt-c">홍길동</td>
-                                                                <td class="ta-txt-c">ABC@google.com</td>
-                                                                <td class="ta-txt-c">010-1111-2222</td>
+                                                                <td class="ta-txt-c">Work_10</td>
+                                                                <td class="ta-txt-c">5명</td>
+                                                                <td class="ta-txt-c">명태화</td>
+                                                                <td class="ta-txt-c">김철미</td>
                                                                 <td class="ta-txt-c">2010.10.11</td>
-                                                                <td class="ta-txt-c">2020-06-28 23:29</td>
-                                                                <td class="ta-txt-c">Annotator</td>
                                                                 <td class="ta-txt-c">
                                                                     <div class="ta-hidden-td">
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-roleedit">
 
-                                                                            <a class="info title" href="#divEditUser">
+                                                                            <a class="info title" href="#divEditGroup">
                                                                                 <span class="ta-icon">
-																					<i class="fas fa-user-edit"></i>
+																					<i class="fas fa-edit"></i>
 																				</span>
                                                                             </a>
 
@@ -939,7 +781,7 @@
                                                                         <button type="button"
                                                                                 class="ta-btn ta-btn-trash">
 
-                                                                            <a class="info title" href="#divDelUser">
+                                                                            <a class="info title" href="#divDelGroup">
                                                                                 <span class="ta-icon">
 																					<i class="fas fa-trash"></i>
 																				</span>
@@ -1039,11 +881,128 @@
 <!-- E : layout -->
 
 <!-- S : 모달팝업 :회원설정 -->
-<div class="ta-modal-popup ta-mp-confirm ta-active" id="divEditUser" style="display: none;"><!-- 활성화 className = ta-active -->
+<div class="ta-modal-popup ta-mp-confirm ta-active" id="divNewGroup" style="display: none;"><!-- 활성화 className = ta-active -->
     <div class="ta-mp-layout">
         <!-- S : 헤더 -->
         <div class="ta-mp-header-area">
-            <div class="ta-mph-title">회원 설정</div>
+            <div class="ta-mph-title">작업그룹 설정</div>
+            <button type="button" class="ta-btn ta-btn-mp-close" title="" id="btnNewClose">팝업닫기</button>
+        </div>
+        <!-- E : 헤더 -->
+
+        <!-- S : 컨테이너 -->
+        <div class="ta-mp-container-area">
+            <div class="ta-contents">
+                <!-- S : 여기서부터 컨텐츠 -->
+
+                <div class="ta-conts-userjoin">
+                    <div class="ta-table ta-tbl-write">
+                        <table>
+                            <caption>테이블</caption>
+                            <colgroup>
+                                <col style="width: 24%;">
+                                <col style="width: 76%;">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">그룹명</th>
+                                <td>
+                                    <div class="ta-input ta-focus">
+                                        <input type="text" placeholder="그룹명" title="" value="">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr><td></td></tr>
+                            <tr>
+                                <th scope="row" colspan="2">Annotator 선택</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="ta-select">
+                                        <select name="" id="" title="Annotator 선택">
+                                            <option value="">Annotator 선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="ta-select">
+                                        <select name="" id="" title="Annotator 선택">
+                                            <option value="">Annotator 선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="ta-select">
+                                        <select name="" id="" title="Annotator 선택">
+                                            <option value="">Annotator 선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr><td></td></tr>
+                            <tr>
+                                <th scope="row" colspan="2">Manager 지정</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="ta-select">
+                                        <select name="" id="" title="Annotator 선택">
+                                            <option value="">Annotator 선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr><td></td></tr>
+                            <tr>
+                                <th scope="row" colspan="2">Linguister 지정</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="ta-select">
+                                        <select name="" id="" title="Annotator 선택">
+                                            <option value="">Linguister 선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- S : 여기까지 컨텐츠 -->
+            </div>
+
+            <!-- S : 하단고정영역 -->
+            <div class="ta-bottom-area">
+                <div class="ta-btn-area">
+                    <div class="ta-grp-main">
+                        <button type="button" class="ta-btn ta-btn-m ta-btn-bggray" id="btnNewClose_c">취소</button>
+                        <button type="button" class="ta-btn ta-btn-m ta-btn-bgblue" id="btnNewClose_u">변경</button>
+                    </div>
+                </div>
+            </div>
+            <!-- E : 하단고정영역 -->
+        </div>
+        <!-- E : 컨테이너 -->
+
+    </div>
+</div>
+<!-- E : 모달팝업 -->
+
+<!-- S : 모달팝업 :회원설정 -->
+<div class="ta-modal-popup ta-mp-confirm ta-active" id="divEditGroup" style="display: none;"><!-- 활성화 className = ta-active -->
+    <div class="ta-mp-layout">
+        <!-- S : 헤더 -->
+        <div class="ta-mp-header-area">
+            <div class="ta-mph-title">작업그룹 설정</div>
             <button type="button" class="ta-btn ta-btn-mp-close" title="" id="btnClose">팝업닫기</button>
         </div>
         <!-- E : 헤더 -->
@@ -1063,42 +1022,74 @@
                             </colgroup>
                             <tbody>
                             <tr>
-                                <th scope="row">작업그룹</th>
+                                <th scope="row">그룹명</th>
                                 <td>
-                                    <div class="ta-select">
-                                        <select name="" id="" title="작업그룹선택">
-                                            <option value="">선택</option>
-                                            <option value="">option1</option>
-                                            <option value="">option2</option>
-                                            <option value="">option3</option>
-                                            <option value="" disabled="">disabled</option>
-                                        </select>
+                                    <div class="ta-input ta-focus">
+                                        <input type="text" placeholder="그룹명" title="" value="Work_01">
                                     </div>
                                 </td>
                             </tr>
                             <tr><td></td></tr>
                             <tr>
-                                <th scope="row" rowspan="2">회원구분</th>
+                                <th scope="row" colspan="2">Annotator 변경</th>
+                            </tr>
+                            <tr>
+                                <td>홍길동</td>
                                 <td>
-                                    <div class="ta-radio">
-                                        <input type="radio" id="rad1_1" name="rad1" value="" checked="checked">
-                                        <label for="rad1_1"><span class="ta-label">Annotator</span></label>
-                                    </div>
-                                    <div class="ta-radio">
-                                        <input type="radio" id="rad1_2" name="rad1" value="">
-                                        <label for="rad1_2"><span class="ta-label">Anno. Mng</span></label>
+                                    <div class="ta-select">
+                                        <select name="" id="" title="Annotator 선택">
+                                            <option value="">Annotator 선택</option>
+                                        </select>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
+                                <td>고길동</td>
                                 <td>
-                                    <div class="ta-radio">
-                                        <input type="radio" id="rad1_3" name="rad1" value="">
-                                        <label for="rad1_3"><span class="ta-label">Linguister</span></label>
+                                    <div class="ta-select">
+                                        <select name="" id="" title="Annotator 선택">
+                                            <option value="">Annotator 선택</option>
+                                        </select>
                                     </div>
-                                    <div class="ta-radio">
-                                        <input type="radio" id="rad1_4" name="rad1" value="">
-                                        <label for="rad1_4"><span class="ta-label">Admin </span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>둘리</td>
+                                <td>
+                                    <div class="ta-select">
+                                        <select name="" id="" title="Annotator 선택">
+                                            <option value="">Annotator 선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr><td></td></tr>
+                            <tr>
+                                <th scope="row" colspan="2">Manager 변경</th>
+                            </tr>
+                            <tr>
+                                <td>김영희</td>
+                                <td>
+                                    <div class="ta-select">
+                                        <select name="" id="" title="Annotator 선택">
+                                            <option value="">Annotator 선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr><td></td></tr>
+                            <tr>
+                                <th scope="row" colspan="2">Linguister 변경</th>
+                            </tr>
+                            <tr>
+                                <td>명티금</td>
+                                <td>
+                                    <div class="ta-select">
+                                        <select name="" id="" title="Annotator 선택">
+                                            <option value="">Linguister 선택</option>
+                                        </select>
                                     </div>
                                 </td>
                             </tr>
@@ -1129,13 +1120,13 @@
 <!-- E : 모달팝업 -->
 
 
-<!-- S : 모달팝업 : 사용자 삭제 -->
-<div class="ta-modal-popup ta-mp-confirm ta-active" id="divDelUser" style="display: none"><!-- 활성화 className = ta-active -->
+<!-- S : 모달팝업 -->
+<div class="ta-modal-popup ta-mp-confirm ta-active" id="divDelGroup" style="display:none;"><!-- 활성화 className = ta-active -->
     <div class="ta-mp-layout">
         <!-- S : 헤더 -->
         <div class="ta-mp-header-area">
-            <div class="ta-mph-title">사용자 삭제</div>
-            <button type="button" class="ta-btn ta-btn-mp-close" title="" id="btnDelClose">팝업닫기</button>
+            <div class="ta-mph-title">그룹 삭제</div>
+            <button type="button" class="ta-btn ta-btn-mp-close" title="" id="btnDelGroupClose">팝업닫기</button>
         </div>
         <!-- E : 헤더 -->
 
@@ -1147,135 +1138,19 @@
 
 
                 <div class="ta-mp-msg-area">
-                    <!-- S : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+                    <!-- S : 수정이력 : * 	2020-10-21			EiLAB		마크업변경(생성된 봇이 없는 경우 로고 추가) -->
                     <div class="ta-mpm-icon-area">
                         <span class="ta-icon"><img src="../../../resource/image/component/icon/icon-warning.svg" alt="" /></span>
                     </div>
-                    <!-- E : 수정이력 : * 	2020-10-23			EiLAB		마크업변경(이미지변환) -->
+                    <!-- E : 수정이력 : * 	2020-10-21			EiLAB		마크업변경(생성된 봇이 없는 경우 로고 추가) -->
                     <div class="ta-mpm-txt-area">
                         <div class="ta-mpm-desc">
-                            <p class="ta-msg-warn">사용자는 삭제하면 복구를 할 수 없습니다.</p>
+                            <p class="ta-msg-warn">선택한 그룹은 삭제하면 복구를 할 수 없습니다.</p>
                             <p>지금 삭제를 진행하시겠어요?</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- S : 여기까지 컨텐츠 -->
-            </div>
-
-            <!-- S : 하단고정영역 -->
-            <div class="ta-bottom-area">
-                <div class="ta-btn-area">
-                    <div class="ta-grp-main">
-                        <button type="button" class="ta-btn ta-btn-m ta-btn-bggray" id="btnDelClose_c">취소</button>
-                        <button type="button" class="ta-btn ta-btn-m ta-btn-bgblue" id="btnDelClose_d">삭제</button>
-                    </div>
-                </div>
-            </div>
-            <!-- E : 하단고정영역 -->
-        </div>
-        <!-- E : 컨테이너 -->
-    </div>
-</div>
-<!-- E : 모달팝업 -->
-
-<!-- S : 모달팝업 -->
-<div class="ta-modal-popup ta-mp-confirm ta-active" id="divNewUser" style="display:none;"><!-- 활성화 className = ta-active -->
-    <div class="ta-mp-layout">
-        <!-- S : 헤더 -->
-        <div class="ta-mp-header-area">
-            <div class="ta-mph-title">사용자 등록</div>
-            <button type="button" class="ta-btn ta-btn-mp-close" title="" id="btnNewClose">팝업닫기</button>
-        </div>
-        <!-- E : 헤더 -->
-
-        <!-- S : 컨테이너 -->
-        <div class="ta-mp-container-area">
-            <div class="ta-contents">
-                <!-- S : 여기서부터 컨텐츠 -->
-
-                <div class="ta-conts-userjoin">
-                    <div class="ta-table ta-tbl-write">
-                        <table>
-                            <caption>테이블</caption>
-                            <colgroup>
-                                <col style="width: 24%;">
-                                <col style="width: 76%;">
-                            </colgroup>
-                            <tbody>
-                            <tr>
-                                <th scope="row">아이디</th>
-                                <td>
-                                    <div class="ta-input ta-w-full">
-                                        <input type="text" placeholder="아이디입력" title="" value="">
-                                        <button type="button" class="ta-btn ta-input-clear">문구삭제</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">비밀번호</th>
-                                <td>
-                                    <div class="ta-input ta-w-full">
-                                        <input type="password" placeholder="비밀번호 입력" title="" value="">
-                                        <button type="button" class="ta-btn ta-input-clear">문구삭제</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">이름</th>
-                                <td>
-                                    <div class="ta-input ta-w-full">
-                                        <input type="text" placeholder="이름 입력" title="" value="">
-                                        <button type="button" class="ta-btn ta-input-clear">문구삭제</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">사번</th>
-                                <td>
-                                    <div class="ta-input ta-w-full">
-                                        <input type="text" placeholder="사번 입력" title="" value="">
-                                        <button type="button" class="ta-btn ta-input-clear">문구삭제</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">이메일</th>
-                                <td>
-                                    <div class="ta-input ta-w-full">
-                                        <input type="text" placeholder="이메일 입력" title="" value="">
-                                        <button type="button" class="ta-btn ta-input-clear">문구삭제</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">전화번호</th>
-                                <td>
-                                    <div class="ta-input ta-w-full">
-                                        <input type="text" placeholder="전화번호 입력" title="" value="">
-                                        <button type="button" class="ta-btn ta-input-clear">문구삭제</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">작업권한</th>
-                                <td>
-                                    <div class="ta-select ta-w-full">
-                                        <select name="" id="" title="">
-                                            <option value="" disabled selected>권한선택</option>
-                                            <option value="">Annotator</option>
-                                            <option value="">Anno. Mng</option>
-                                            <option value="">Linguister</option>
-                                            <option value="">Admin</option>
-                                        </select>
-                                    </div>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
 
 
                 <!-- S : 여기까지 컨텐츠 -->
@@ -1285,15 +1160,14 @@
             <div class="ta-bottom-area">
                 <div class="ta-btn-area">
                     <div class="ta-grp-main">
-                        <button type="button" class="ta-btn ta-btn-m ta-btn-bggray" id="btnNewClose_c">취소</button>
-                        <button type="button" class="ta-btn ta-btn-m ta-btn-bgblue" id="btnNewClose_a">추가</button>
+                        <button type="button" class="ta-btn ta-btn-m ta-btn-bggray" id="btnDelGroupClose_c">취소</button>
+                        <button type="button" class="ta-btn ta-btn-m ta-btn-bgblue" id="btnDelGroupClose_d">삭제</button>
                     </div>
                 </div>
             </div>
             <!-- E : 하단고정영역 -->
         </div>
         <!-- E : 컨테이너 -->
-
     </div>
 </div>
 <!-- E : 모달팝업 -->
@@ -1304,31 +1178,32 @@
 
 
 <script>
-
-    $("[id='btnNewUser']").click(function(event) {
-        $('#divNewUser').show();
-    });
-
-    $("[id^='btnNewClose']").click(function(event) {
-        $('#divNewUser').hide();
-    });
-
-    $('a[href="#divEditUser"]').click(function(event) {
-        $('#divEditUser').show();
+    $('a[href="#divEditGroup"]').click(function(event) {
+        $('#divEditGroup').show();
     });
 
     $("[id^='btnClose']").click(function(event) {
-        $('#divEditUser').hide();
+        $('#divEditGroup').hide();
     });
 
 
-    $('a[href="#divDelUser"]').click(function(event) {
-        $('#divDelUser').show();
+    $('a[href="#divDelGroup"]').click(function(event) {
+        $('#divDelGroup').show();
     });
 
-    $("[id^='btnDelClose']").click(function(event) {
-        $('#divDelUser').hide();
+    $("[id^='btnDelGroupClose']").click(function(event) {
+        $('#divDelGroup').hide();
     });
+
+
+    $("[id='btnNewGroup']").click(function(event) {
+       $('#divNewGroup').show();
+    });
+
+    $("[id^='btnNewClose']").click(function(event) {
+        $('#divNewGroup').hide();
+    });
+
 
     $("[id='btnJoin']").click(function(event) {
         location.href ='../../../html/bot_designer/usermanagement/join_main.html';
@@ -1337,6 +1212,5 @@
     $("[id='btnSign']").click(function(event) {
         location.href ='../../../html/authorize/signin/signin_main.html';
     });
-
 
 </script>
